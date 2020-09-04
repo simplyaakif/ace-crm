@@ -1,0 +1,87 @@
+{
+  "routePrefix": "recovery.table",
+  "dataRouteSuffix": "data",
+  "name": "ACE Institute Recovery Report",
+  "selectable": false,
+  "crtNo": true,
+  "buttons": [
+
+    {
+      "type": "row",
+      "icon": "eye",
+      "class": "is-small is-table-button has-margin-left-small is-naked",
+      "event": "view"
+    }
+
+  ],
+  "columns": [
+    {
+      "label": "Name",
+      "name": "a_name",
+      "data": "a_name",
+      "class": "text-capitalize",
+      "meta": [
+        "searchable"
+      ]
+    },
+    {
+      "label": "Course",
+      "name": "c_title",
+      "data": "c_title",
+      "meta": [
+      ]
+    },
+    {
+      "label": "Batch",
+      "name": "b_name",
+      "data": "b_name",
+      "class": "has-text-info",
+      "meta": [
+        "searchable",
+        "sortable"
+      ]
+    },
+    {
+      "label": "Timings",
+      "name": "b_timings",
+      "data": "b_timings",
+      "class": "",
+      "meta": [
+        "searchable",
+        "sortable"
+      ]
+    },
+
+    {
+      "label": "Amount",
+      "name": "instAmount",
+      "data": "recoveries.instAmount",
+      "meta": [
+        "slot",
+        "total"
+      ],
+      "money": {
+        "symbol": "Rs",
+        "decimal": ".",
+        "thousand": ",",
+        "precision": 0
+      }
+    }, {
+      "label": "Status",
+      "name": "status",
+      "data": "recoveries.dueDate",
+      "meta": [
+        "slot"
+      ]
+    },    {
+      "label": "Due At",
+      "name": "dueDate",
+      "data": "recoveries.dueDate",
+      "meta": [
+        "date",
+        "sortable",
+        "sort:ASC"
+      ]
+    }
+  ]
+}

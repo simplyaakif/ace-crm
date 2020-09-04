@@ -1,0 +1,17 @@
+{
+    "files.exclude": {
+        ".editorconfig": true,
+        ".env.example": true,
+        ".gitattributes": true,
+        ".gitignore": true,
+        ".vscode": true,
+        "**/console": true,
+        "app/console": true,
+        "bootstrap": true,
+        "composer.lock": true,
+        "node_modules": true,
+        "phpunit.xml": true,
+        "readme.md": true,
+        "vendor": true
+    }
+}

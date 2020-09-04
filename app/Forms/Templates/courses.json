@@ -1,0 +1,62 @@
+{
+  "title": "Courses",
+  "icon": "location-arrow",
+  "tabs": false,
+  "method": null,
+  "routePrefix": "form.courses",
+  "sections": [
+    {
+      "tab": "Course",
+      "columns": 3,
+      "fields": [
+        {
+          "label": "Course Title",
+          "name": "c_title",
+          "value": null,
+          "meta": {
+            "custom": false,
+            "type": "input",
+            "content": "text",
+            "disabled": false
+          }
+        },{
+          "label": "Course Duration",
+          "name": "c_duration",
+          "value": null,
+          "meta": {
+            "custom": false,
+            "type": "input",
+            "content": "text",
+            "disabled": false
+          }
+        },{
+          "label": "Course Fee",
+          "name": "c_fee",
+          "value": null,
+          "meta": {
+            "custom": false,
+            "type": "input",
+            "content": "text",
+            "disabled": false
+          }
+        }
+      ]
+    },{
+      "tab": "Course",
+      "columns": 1,
+      "fields": [
+        {
+          "label": "Course Description",
+          "name": "c_description",
+          "value": null,
+          "meta": {
+            "custom": false,
+            "type": "textarea",
+            "rows": 5,
+            "resize": true
+          }
+        }
+      ]
+    }
+  ]
+}

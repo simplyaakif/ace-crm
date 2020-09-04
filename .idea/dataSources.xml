@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="MediaManager" uuid="07fe86b8-66d6-4ad6-9be2-04a5a3b85487">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:F:\Aakif Work\Websites\Managment\1 Ace Portal\database\MediaManager.sqlite</jdbc-url>
+    </data-source>
+  </component>
+</project>

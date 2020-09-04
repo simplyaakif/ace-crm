@@ -1,0 +1,69 @@
+<mjml>
+  <mj-body width="100%">
+    <mj-section background-color="#282373">
+      <mj-column width="600px">
+
+        <mj-text align="center" font-size="24px" color="yellow" font-weight="700" font-family="helvetica">ACE American Institute of English</mj-text>
+
+        <mj-divider border-width="2px" border-color="#fff"></mj-divider>
+
+        <mj-text font-size="20px" align="center" color="#fff" font-family="helvetica">Daily Report</mj-text>
+
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section>
+      <mj-column width="600px">
+        <mj-text align="left" font-size="20px" font-weight="700"  color="#333" font-family="arial">Queries Report - 10 Queries</mj-text>
+         <mj-table font-size="15px">
+          <tr style="border-bottom:1px solid #ecedee;text-align:left;padding:15px 0;">
+            <th style="padding: 0 15px 0 0;">Name</th>
+            <th style="padding: 0 15px;">Phone Number</th>
+            <th style="padding: 0 0 0 15px;">Course</th>
+            <th>Visit Type</th>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px 0 0;">1995</td>
+            <td style="padding: 0 15px;">PHP</td>
+            <td style="padding: 0 0 0 15px;">C, Shell Unix</td>
+            <td>Nothing</td>
+          </tr>
+
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section>
+      <mj-column width="600px">
+        <mj-text align="left" font-size="20px" font-weight="700"  color="#333" font-family="arial">Admissions Report - 10 Students</mj-text>
+         <mj-table font-size="15px">
+          <tr style="border-bottom:1px solid #ecedee;text-align:left;padding:15px 0;">
+            <th style="padding: 0 15px 0 0;">Name</th>
+            <th style="padding: 0 15px;">Phone Number</th>
+            <th style="padding: 0 0 0 15px;">Course</th>
+            <th>Paid</th>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px 0 0;">1995</td>
+            <td style="padding: 0 15px;">PHP</td>
+            <td style="padding: 0 0 0 15px;">C, Shell Unix</td>
+            <td>Nothing</td>
+          </tr>
+
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+        <mj-section background-color="#B80404">
+      <mj-column width="600px">
+
+        <mj-text align="center" font-size="16px"  color="#fff" font-family="arial">ACE Institute. All rights reserved</mj-text>
+
+
+
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

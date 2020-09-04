@@ -1,0 +1,63 @@
+{
+  "routePrefix": "expense.table",
+  "dataRouteSuffix": "data",
+  "name": "ACE Institute Expense Report",
+  "selectable": false,
+  "crtNo": true,
+  "buttons": [
+
+    {
+      "type": "row",
+      "icon": "eye",
+      "class": "is-small is-table-button has-margin-left-small is-naked",
+      "event": "view"
+    }
+
+  ],
+  "columns": [
+    {
+      "label": "Title",
+      "name": "e_title",
+      "data": "e_title",
+      "class": "text-capitalize",
+      "meta": [
+        "searchable"
+      ]
+    },
+    {
+      "label": "Expense Type",
+      "name": "e_cat",
+      "data": "e_cat",
+      "class": "has-text-info",
+      "meta": [
+        "searchable",
+        "sortable"
+      ]
+    },
+    {
+      "label": "Status",
+      "name": "e_status_paid",
+      "data": "e_status_paid",
+      "class": "",
+      "meta": [
+        "slot"
+      ]
+    },
+
+    {
+      "label": "Amount",
+      "name": "e_amount",
+      "data": "e_amount",
+      "meta": [
+        "slot",
+        "total"
+      ],
+      "money": {
+        "symbol": "Rs",
+        "decimal": ".",
+        "thousand": ",",
+        "precision": 0
+      }
+    }
+  ]
+}

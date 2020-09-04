@@ -1,0 +1,111 @@
+{
+  "routePrefix": "examples.table",
+  "dataRouteSuffix": "data",
+  "name": "ACE Institute Queries Report",
+  "selectable": true,
+  "crtNo": true,
+  "buttons": [
+    {
+      "type": "global",
+      "icon": "plus",
+      "class": "is-outlined",
+      "action": "href",
+      "event": "create",
+      "label": "Create",
+      "fullRoute": "q_create"
+    },
+    {
+      "type": "row",
+      "icon": "pencil-alt",
+      "class": "is-small is-table-button has-margin-left-small is-naked",
+      "event": "edit"
+    },
+    {
+      "type": "row",
+      "icon": "trash-alt",
+      "class": "",
+      "event": "destroy",
+      "postEvent": "postdestroy",
+      "action": "ajax",
+      "method": "DELETE",
+      "fullRoute": "q_delete",
+      "confirmation": true,
+      "message": "This will delete all of the query information. Are you sure?"
+    }
+  ],
+  "columns": [
+    {
+      "label": "Name",
+      "name": "q_name",
+      "data": "q_name",
+      "class": "text-capitalize",
+      "meta": [
+        "searchable",
+        "sortable",
+        "slot"
+      ]
+    },
+    {
+      "label": "Mobile",
+      "name": "q_contact",
+      "data": "queries.q_contact",
+      "meta": [
+        "searchable",
+        "sortable"
+      ]
+    },
+    {
+      "label": "Interaction Type",
+      "name": "q_interaction_type",
+      "data": "queries.q_interaction_type",
+      "meta": [
+        "searchable",
+        "sortable"
+      ]
+    },
+    {
+      "label": "Timings",
+      "name": "q_preferred_timings",
+      "data": "queries.q_preferred_timings",
+      "class": "",
+      "meta": [
+      ]
+    },
+    {
+      "label": "Course",
+      "name": "c_title",
+      "data": "courses.c_title",
+      "class": "tagged",
+      "meta": [
+        "searchable",
+        "sortable"
+      ]
+    },
+    {
+      "label": "Status",
+      "name": "q_is_converted",
+      "data": "queries.q_is_converted",
+      "meta": [
+        "sortable"
+      ]
+    },
+    {
+      "label": "Dealt By",
+      "name": "q_dealt_by",
+      "data": "queries.q_dealt_by",
+      "meta": [
+        "sortable"
+      ]
+    },
+    {
+      "label": "Created At",
+      "name": "created_at",
+      "data": "queries.created_at",
+      "meta": [
+        "date",
+        "sortable",
+        "sort:DESC"
+      ]
+    }
+  ]
+}

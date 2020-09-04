@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9369e36b-d4c9-457a-83fb-e0faf15d4994" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints>
+      <file url="file://$PROJECT_DIR$/resources/views/Pages/dashboard/dash.blade.php" />
+    </disable_hints>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MediaManager" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupnpm">
+      <scroll-view-position x="0" y="0" />
+      <selected-paths>
+        <path>
+          <id value="$PROJECT_DIR$/package.json" />
+          <id value="watch" />
+        </path>
+      </selected-paths>
+    </layout>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/box/spout" />
+      <path value="$PROJECT_DIR$/vendor/laravel-enso/helpers" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/laravel-enso/tables" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/laravel-enso/core" />
+      <path value="$PROJECT_DIR$/vendor/laravel-enso/enums" />
+      <path value="$PROJECT_DIR$/vendor/mashape/unirest-php" />
+      <path value="$PROJECT_DIR$/vendor/grammarbot/grammarbot-php-client" />
+      <path value="$PROJECT_DIR$/vendor/laravel-enso/select" />
+      <path value="$PROJECT_DIR$/vendor/laravel-enso/forms" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/lifetimesms/gateway" />
+      <path value="$PROJECT_DIR$/vendor/jhofm/flysystem-iterator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/ctf0/media-manager" />
+      <path value="$PROJECT_DIR$/vendor/ctf0/package-changelog" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1ZWZhNI84VqdJWuU3LQKdR0TJx8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Hava/Website/site" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="F:\Program Files\JetBrains\PhpStorm 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\resources\js\components\misc" />
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Http\Controllers\Tables" />
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Forms\Templates" />
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Http\Controllers\Tables\TableController" />
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Http\Controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\resources\js\components\misc" />
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\resources\views\pages\finance" />
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\config\enso" />
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Http\Controllers\Tables" />
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Http\Controllers\Tables\Template" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.QueriesTest">
+    <configuration name="QueriesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\QueriesTest" file="$PROJECT_DIR$/tests/Feature/QueriesTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.QueriesTest" />
+        <item itemvalue="npm.watch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Aakif Raza\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9369e36b-d4c9-457a-83fb-e0faf15d4994" name="Default Changelist" comment="" />
+      <created>1557566120063</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557566120063</updated>
+      <workItem from="1557566134597" duration="1078000" />
+      <workItem from="1558256025755" duration="387000" />
+      <workItem from="1558452953430" duration="3169000" />
+      <workItem from="1558558730047" duration="1331000" />
+      <workItem from="1558561072163" duration="2080000" />
+      <workItem from="1558623941270" duration="8000000" />
+      <workItem from="1558649147273" duration="2564000" />
+      <workItem from="1558732888886" duration="6493000" />
+      <workItem from="1558882076471" duration="591000" />
+      <workItem from="1560169004927" duration="486000" />
+      <workItem from="1560326912439" duration="9192000" />
+      <workItem from="1560347953754" duration="5507000" />
+      <workItem from="1560403155015" duration="141000" />
+      <workItem from="1561010257863" duration="4307000" />
+      <workItem from="1561123632659" duration="4650000" />
+      <workItem from="1561389033051" duration="986000" />
+      <workItem from="1561462294927" duration="64000" />
+      <workItem from="1561473466535" duration="600000" />
+      <workItem from="1561535140273" duration="1176000" />
+      <workItem from="1561546721317" duration="7553000" />
+      <workItem from="1561626017438" duration="11498000" />
+      <workItem from="1561699004634" duration="1723000" />
+      <workItem from="1561705428229" duration="2556000" />
+      <workItem from="1561884948836" duration="584000" />
+      <workItem from="1561966128244" duration="11773000" />
+      <workItem from="1562047449481" duration="15121000" />
+      <workItem from="1562141451524" duration="31016000" />
+      <workItem from="1562221039917" duration="18087000" />
+      <workItem from="1562312229638" duration="19835000" />
+      <workItem from="1562393019237" duration="3601000" />
+      <workItem from="1562564061999" duration="8012000" />
+      <workItem from="1562654486136" duration="15958000" />
+      <workItem from="1562699740930" duration="873000" />
+      <workItem from="1562746642465" duration="13116000" />
+      <workItem from="1562786760702" duration="1537000" />
+      <workItem from="1562829683931" duration="21822000" />
+      <workItem from="1562871121030" duration="1198000" />
+      <workItem from="1562917652024" duration="18415000" />
+      <workItem from="1562997153970" duration="8204000" />
+      <workItem from="1563090069353" duration="22155000" />
+      <workItem from="1563168547086" duration="36130000" />
+      <workItem from="1563361560759" duration="4241000" />
+      <workItem from="1563427214300" duration="24234000" />
+      <workItem from="1563519477033" duration="19514000" />
+      <workItem from="1563689209601" duration="2024000" />
+      <workItem from="1563772804591" duration="592000" />
+      <workItem from="1563782338719" duration="6932000" />
+      <workItem from="1563866256653" duration="11783000" />
+      <workItem from="1563943384492" duration="670000" />
+      <workItem from="1563952298816" duration="22335000" />
+      <workItem from="1564077917181" duration="1556000" />
+      <workItem from="1564112798870" duration="8095000" />
+      <workItem from="1564134001554" duration="16139000" />
+      <workItem from="1564239641197" duration="137000" />
+      <workItem from="1564239917186" duration="1796000" />
+      <workItem from="1564301890456" duration="6049000" />
+      <workItem from="1564383880545" duration="815000" />
+      <workItem from="1564472251555" duration="20252000" />
+      <workItem from="1564555395780" duration="1075000" />
+      <workItem from="1564557235125" duration="14391000" />
+      <workItem from="1564639542894" duration="5720000" />
+      <workItem from="1564732223151" duration="8868000" />
+      <workItem from="1564813784316" duration="1903000" />
+      <workItem from="1565033458489" duration="1097000" />
+      <workItem from="1565190855290" duration="597000" />
+      <workItem from="1565197786617" duration="3154000" />
+      <workItem from="1565683645633" duration="1066000" />
+      <workItem from="1565807012556" duration="734000" />
+      <workItem from="1566394876370" duration="2143000" />
+      <workItem from="1566456866426" duration="11505000" />
+      <workItem from="1566543619924" duration="10791000" />
+      <workItem from="1566642755794" duration="588000" />
+      <workItem from="1566684405564" duration="397000" />
+      <workItem from="1566719441802" duration="4240000" />
+      <workItem from="1566807276868" duration="361000" />
+      <workItem from="1566816286727" duration="5170000" />
+      <workItem from="1566894001835" duration="3332000" />
+      <workItem from="1566977929364" duration="1247000" />
+      <workItem from="1566994628403" duration="1793000" />
+      <workItem from="1567079811285" duration="1810000" />
+      <workItem from="1567166144948" duration="1203000" />
+      <workItem from="1567239838360" duration="1190000" />
+      <workItem from="1568140072572" duration="971000" />
+      <workItem from="1568282927816" duration="1520000" />
+      <workItem from="1568611382249" duration="121000" />
+      <workItem from="1568617166990" duration="2194000" />
+      <workItem from="1568900402830" duration="45000" />
+      <workItem from="1569071609419" duration="598000" />
+      <workItem from="1569251603015" duration="1980000" />
+      <workItem from="1569309878539" duration="2285000" />
+      <workItem from="1569396749079" duration="1192000" />
+      <workItem from="1569657660655" duration="517000" />
+      <workItem from="1569658235926" duration="3146000" />
+      <workItem from="1569910282427" duration="5675000" />
+      <workItem from="1570037607254" duration="600000" />
+      <workItem from="1570165683881" duration="4972000" />
+      <workItem from="1570284106598" duration="549000" />
+      <workItem from="1570287750545" duration="1569000" />
+      <workItem from="1570348642622" duration="321000" />
+      <workItem from="1570350010361" duration="4877000" />
+      <workItem from="1570384910296" duration="7167000" />
+      <workItem from="1570423028883" duration="21489000" />
+      <workItem from="1570515344908" duration="4406000" />
+      <workItem from="1570625934498" duration="1013000" />
+      <workItem from="1570655769782" duration="2554000" />
+      <workItem from="1570718015593" duration="9927000" />
+      <workItem from="1571062985721" duration="555000" />
+      <workItem from="1571078128567" duration="1478000" />
+      <workItem from="1571081829545" duration="945000" />
+      <workItem from="1571126441623" duration="595000" />
+      <workItem from="1571148612855" duration="6801000" />
+      <workItem from="1571208463001" duration="4000" />
+      <workItem from="1571236413215" duration="7512000" />
+      <workItem from="1571291787432" duration="21654000" />
+      <workItem from="1571339728490" duration="7357000" />
+      <workItem from="1571398988289" duration="17142000" />
+      <workItem from="1571469722456" duration="6599000" />
+      <workItem from="1571570168651" duration="8975000" />
+      <workItem from="1571599635905" duration="4525000" />
+      <workItem from="1571636294750" duration="13270000" />
+      <workItem from="1571670582580" duration="9276000" />
+      <workItem from="1571728613676" duration="672000" />
+      <workItem from="1571729338830" duration="21286000" />
+      <workItem from="1571814315989" duration="14675000" />
+      <workItem from="1571891962812" duration="25799000" />
+      <workItem from="1571981543955" duration="13624000" />
+      <workItem from="1572066484032" duration="21249000" />
+      <workItem from="1572176380732" duration="8956000" />
+      <workItem from="1572245725171" duration="17096000" />
+      <workItem from="1572326087042" duration="24709000" />
+      <workItem from="1572418525385" duration="586000" />
+      <workItem from="1572420115142" duration="9741000" />
+      <workItem from="1572512986212" duration="5893000" />
+      <workItem from="1572603367479" duration="5620000" />
+      <workItem from="1572693385692" duration="2051000" />
+      <workItem from="1572775706330" duration="13569000" />
+      <workItem from="1572796597842" duration="9244000" />
+      <workItem from="1572854075680" duration="1306000" />
+      <workItem from="1572961622697" duration="548000" />
+      <workItem from="1573045012853" duration="3856000" />
+      <workItem from="1573117919597" duration="840000" />
+      <workItem from="1573126316200" duration="799000" />
+      <workItem from="1573223996475" duration="567000" />
+      <workItem from="1573299696301" duration="2662000" />
+      <workItem from="1573390314264" duration="586000" />
+      <workItem from="1573469021819" duration="564000" />
+      <workItem from="1573470984618" duration="3378000" />
+      <workItem from="1573641491807" duration="1169000" />
+      <workItem from="1573727825935" duration="1218000" />
+      <workItem from="1573800035189" duration="7280000" />
+      <workItem from="1573891156989" duration="1846000" />
+      <workItem from="1574149372197" duration="13007000" />
+      <workItem from="1574227783330" duration="3087000" />
+      <workItem from="1574492969853" duration="9776000" />
+      <workItem from="1574610911576" duration="4489000" />
+      <workItem from="1574665280486" duration="2051000" />
+      <workItem from="1574748232231" duration="4163000" />
+      <workItem from="1575635923128" duration="1715000" />
+      <workItem from="1577252489523" duration="576000" />
+      <workItem from="1577690030585" duration="863000" />
+      <workItem from="1577862608283" duration="593000" />
+      <workItem from="1578296491221" duration="8878000" />
+      <workItem from="1578378996068" duration="8005000" />
+      <workItem from="1578546628414" duration="555000" />
+      <workItem from="1579677518854" duration="229000" />
+      <workItem from="1580462556271" duration="3690000" />
+      <workItem from="1580547079679" duration="1139000" />
+      <workItem from="1580904167282" duration="12692000" />
+      <workItem from="1580919993921" duration="285000" />
+      <workItem from="1584956970841" duration="2764000" />
+      <workItem from="1585199590609" duration="5449000" />
+      <workItem from="1585321076522" duration="1971000" />
+      <workItem from="1585388764027" duration="140000" />
+      <workItem from="1585594663291" duration="621000" />
+      <workItem from="1585644539335" duration="18219000" />
+      <workItem from="1585725315389" duration="843000" />
+      <workItem from="1585733933149" duration="1382000" />
+      <workItem from="1585824300667" duration="13584000" />
+      <workItem from="1585895112010" duration="9022000" />
+      <workItem from="1586009027980" duration="4889000" />
+      <workItem from="1598857098846" duration="958000" />
+      <workItem from="1598889149054" duration="836000" />
+      <workItem from="1598907126632" duration="2235000" />
+      <workItem from="1598943296066" duration="5356000" />
+      <workItem from="1599029203110" duration="7835000" />
+      <workItem from="1599208188273" duration="265000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1563644088486</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563644088486</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Before Vue Enso Datatable">
+      <created>1570166838253</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570166838253</updated>
+    </task>
+    <task id="LOCAL-00003" summary="After Enso Tables">
+      <created>1572192915122</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572192915122</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Charts Done. Month Wise &amp; Year Wise">
+      <created>1585678903344</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585678903344</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Query Charts Done. Month Wise &amp; Year Wise">
+      <created>1585835186309</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585835186310</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Query Charts Done. Month Wise &amp; Year Wise">
+      <created>1585835196877</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585835196877</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Query Charts Refactor to a Single Method">
+      <created>1585838823103</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585838823103</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Before Vue Enso Datatable" />
+    <MESSAGE value="After Enso Tables" />
+    <MESSAGE value="Charts Done. Month Wise &amp; Year Wise" />
+    <MESSAGE value="Query Charts Done. Month Wise &amp; Year Wise" />
+    <MESSAGE value="Query Charts Refactor to a Single Method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Query Charts Refactor to a Single Method" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="9" key="SettingsEditor" timestamp="1599029275848">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599029275848" />
+    <state width="505" height="446" key="SwitcherDM" timestamp="1598907461780">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="505" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1598907461780" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1599035109451">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1599035109451" />
+  </component>
+</project>

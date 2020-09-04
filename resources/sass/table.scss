@@ -1,0 +1,75 @@
+.dropdown .dropdown-trigger .button.input .angle {
+  right: 10px !important;
+}
+.modals .modal .modal-content{
+  overflow: visible!important;
+  width:auto!important;
+}
+
+.tagged span{
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1.5;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  white-space: nowrap;
+  background-color: #209cee;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  height: 2em;
+  box-shadow: 0 1px 1px rgba(10, 10, 10, 0.2);
+}
+.box ul{
+  margin-bottom: 0!important;
+}
+.box .dropdown-content{
+  padding:0px!important;
+  box-shadow: none!important;
+  color:#4a4a4a;
+}
+.box .dropdown-content .dropdown-item.is-active,.pagination-link.is-current{
+  color:#fff!important;
+}
+.table{
+  color: #4a4a4a !important;
+  font-size:14px!important;
+}
+.vue-table .dropdown-menu{
+  min-width: auto!important;
+}
+.vue-table label{
+  margin-bottom:0px!important;
+}
+.dropdown.vue-select .dropdown-trigger .button.input .control-display .delete {
+  right: 24px;
+}
+.dropdown.vue-select .dropdown-menu .dropdown-content .dropdown-item .label.tag {
+  right: 10px;
+}
+.dropdown.vue-select .dropdown-trigger .button.input .control-display .field.is-grouped.is-grouped-multiline
+.control:last-child .tags:not(:last-child){
+  margin-right: 3px;
+}
+
+
+.selectbox{
+  .header{
+    padding-top: .25em;
+  }
+  .sel{
+    padding:.25em;
+  }
+}
+
+.vue-table .is-money {
+  white-space: unset!important;
+  font-weight: 500;
+  font-family: inherit!important;
+}
+
+div.card {
+  box-shadow:none!important;
+}
