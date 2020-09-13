@@ -229,6 +229,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -264,9 +274,6 @@ Vue.component('multiselect', vue_multiselect__WEBPACK_IMPORTED_MODULE_3___defaul
   data: function data() {
     return {
       q_is_converted: [{
-        value: 'Not Converted',
-        label: 'Not Converted'
-      }, {
         value: 'Rejected',
         label: 'Rejected'
       }, {
@@ -279,15 +286,12 @@ Vue.component('multiselect', vue_multiselect__WEBPACK_IMPORTED_MODULE_3___defaul
         value: 'Interested',
         label: 'Interested'
       }, {
-        value: 'Interested in Next Session',
-        label: 'Interested in Next Session'
-      }, {
-        value: 'Converted Successfully',
-        label: 'Converted Successfully'
+        value: 'Admission',
+        label: 'Admission'
       }],
       dealtBy: [{
-        value: 'Miss Jiya',
-        label: 'Miss Jiya'
+        value: 'Miss Ismat',
+        label: 'Miss Ismat'
       }, {
         value: 'Miss Ayesha',
         label: 'Miss Ayesha'
@@ -340,7 +344,8 @@ Vue.component('multiselect', vue_multiselect__WEBPACK_IMPORTED_MODULE_3___defaul
       selectedModal: false,
       mainPage: true,
       editPage: false,
-      editPath: ''
+      editPath: '',
+      newDate: false
     };
   },
   methods: {
@@ -382,6 +387,7 @@ Vue.component('multiselect', vue_multiselect__WEBPACK_IMPORTED_MODULE_3___defaul
       })["catch"](function (er) {
         console.log(er);
       });
+      this.newDate = false;
     }
   }
 });
@@ -871,7 +877,7 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-lg-6" }, [
+            _c("div", { staticClass: "col-lg-4" }, [
               _c("div", { staticClass: "form-group mg-b-10-force" }, [
                 _c("label", { staticClass: "form-control-label" }, [
                   _vm._v("Status ")
@@ -911,10 +917,6 @@ var render = function() {
                     }
                   },
                   [
-                    _c("option", { attrs: { value: "Not Converted" } }, [
-                      _vm._v("Not Converted")
-                    ]),
-                    _vm._v(" "),
                     _c("option", { attrs: { value: "Rejected" } }, [
                       _vm._v("Rejected")
                     ]),
@@ -931,23 +933,15 @@ var render = function() {
                       _vm._v("Interested")
                     ]),
                     _vm._v(" "),
-                    _c(
-                      "option",
-                      { attrs: { value: "Interested in Next Session" } },
-                      [_vm._v("Interested in Next Session")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "option",
-                      { attrs: { value: "Converted Successfully" } },
-                      [_vm._v("Converted Successfully")]
-                    )
+                    _c("option", { attrs: { value: "Admission" } }, [
+                      _vm._v("Admission")
+                    ])
                   ]
                 )
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-lg-6" }, [
+            _c("div", { staticClass: "col-lg-4" }, [
               _c(
                 "div",
                 { staticClass: "form-group mg-b-10-force" },
@@ -959,7 +953,7 @@ var render = function() {
                   _c("multiselect", {
                     attrs: {
                       options: [
-                        "Miss Jiya",
+                        "Miss Ismat",
                         "Miss Ayesha",
                         "Sir Abdullah",
                         "Sir Aakif"
@@ -979,6 +973,87 @@ var render = function() {
                 ],
                 1
               )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-lg-4" }, [
+              _c("div", { staticClass: "form-group mg-b-10-force" }, [
+                _c("label", { staticClass: "form-control-label" }, [
+                  _vm._v("Next Follow Up ")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: !_vm.newDate,
+                        expression: "!newDate"
+                      }
+                    ],
+                    staticClass: "flex justify-content-between"
+                  },
+                  [
+                    _c("span", [_vm._v(_vm._s(_vm.selectedQuery.updated_at))]),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary btn-small",
+                        on: {
+                          click: function($event) {
+                            _vm.newDate = true
+                          }
+                        }
+                      },
+                      [_vm._v("Add new date")]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: _vm.newDate,
+                        expression: "newDate"
+                      }
+                    ],
+                    staticClass: "flex"
+                  },
+                  [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.selectedQuery.updated_at,
+                          expression: "selectedQuery.updated_at"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "datetime-local" },
+                      domProps: { value: _vm.selectedQuery.updated_at },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.selectedQuery,
+                            "updated_at",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    })
+                  ]
+                )
+              ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-lg-8" }, [
@@ -1040,7 +1115,6 @@ var render = function() {
                     rows: "10",
                     type: "text",
                     name: "",
-                    value: "",
                     placeholder: "Dealt By Comments"
                   },
                   domProps: { value: _vm.selectedQuery.q_remarks },

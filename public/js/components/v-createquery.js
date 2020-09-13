@@ -134,6 +134,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -161,7 +166,8 @@ Vue.component('multiselect', vue_multiselect__WEBPACK_IMPORTED_MODULE_1___defaul
         sessionType: '',
         comments: '',
         q_dealt_by: '',
-        q_is_converted: ''
+        q_is_converted: '',
+        followUp: ''
       },
       sendSms: false,
       sendMail: false
@@ -462,7 +468,7 @@ var render = function() {
           )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-lg-6" }, [
+        _c("div", { staticClass: "col-lg-4" }, [
           _c("div", { staticClass: "form-group mg-b-10-force" }, [
             _c("label", { staticClass: "form-control-label" }, [
               _vm._v("Query Conversion ")
@@ -500,10 +506,6 @@ var render = function() {
                 }
               },
               [
-                _c("option", { attrs: { value: "Not Converted" } }, [
-                  _vm._v("Not Converted")
-                ]),
-                _vm._v(" "),
                 _c("option", { attrs: { value: "Rejected" } }, [
                   _vm._v("Rejected")
                 ]),
@@ -518,21 +520,15 @@ var render = function() {
                   _vm._v("Interested")
                 ]),
                 _vm._v(" "),
-                _c(
-                  "option",
-                  { attrs: { value: "Interested in Next Session" } },
-                  [_vm._v("Interested in Next Session")]
-                ),
-                _vm._v(" "),
-                _c("option", { attrs: { value: "Converted Successfully" } }, [
-                  _vm._v("Converted Successfully")
+                _c("option", { attrs: { value: "Admission" } }, [
+                  _vm._v("Admission")
                 ])
               ]
             )
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-lg-6" }, [
+        _c("div", { staticClass: "col-lg-4" }, [
           _c(
             "div",
             { staticClass: "form-group mg-b-10-force" },
@@ -545,7 +541,7 @@ var render = function() {
                 attrs: {
                   options: [
                     "Miss Ayesha",
-                    "Miss Jiya",
+                    "Miss Ismat",
                     "Sir Aakif",
                     "Sir Abdullah"
                   ],
@@ -564,6 +560,36 @@ var render = function() {
             ],
             1
           )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-4" }, [
+          _c("div", { staticClass: "form-group mg-b-10-force" }, [
+            _c("label", { staticClass: "form-control-label" }, [
+              _vm._v("Next Follow Up ")
+            ]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.query.followUp,
+                  expression: "query.followUp"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "datetime-local" },
+              domProps: { value: _vm.query.followUp },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.query, "followUp", $event.target.value)
+                }
+              }
+            })
+          ])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-lg-8" }, [

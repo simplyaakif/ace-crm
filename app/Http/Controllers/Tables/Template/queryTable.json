@@ -63,14 +63,7 @@
         "sortable"
       ]
     },
-    {
-      "label": "Timings",
-      "name": "q_preferred_timings",
-      "data": "queries.q_preferred_timings",
-      "class": "",
-      "meta": [
-      ]
-    },
+
     {
       "label": "Course",
       "name": "c_title",
@@ -98,13 +91,22 @@
       ]
     },
     {
-      "label": "Created At",
+      "label": "Recieved On",
       "name": "created_at",
       "data": "queries.created_at",
       "meta": [
         "date",
         "sortable",
         "sort:DESC"
+      ]
+    },
+      {
+      "label": "Follow Up",
+      "name": "updated_at",
+      "data": "queries.updated_at",
+      "meta": [
+        "date",
+        "sortable"
       ]
     }
   ]

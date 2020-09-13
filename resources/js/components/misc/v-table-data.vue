@@ -23,22 +23,21 @@
                 </div>
                 <div class="column is-4">
 
-<!--                    <vue-filter class="box"-->
-<!--                                :options="activeOptions"-->
-<!--                                :icons=true-->
-<!--                                title="Status"-->
-<!--                                v-model="filters.queries.q_is_converted"-->
-<!--                    >-->
-<!--                    </vue-filter>-->
+                    <!--                    <vue-filter class="box"-->
+                    <!--                                :options="activeOptions"-->
+                    <!--                                :icons=true-->
+                    <!--                                title="Status"-->
+                    <!--                                v-model="filters.queries.q_is_converted"-->
+                    <!--                    >-->
+                    <!--                    </vue-filter>-->
                     <select-filter title="Status"
                                    :multiple="true"
                                    :options="q_is_converted"
                                    label="label"
-                                   trackBy = "label"
+                                   trackBy="label"
                                    class="box"
                                    v-model="filters.queries.q_is_converted"/>
                 </div>
-
 
             </div>
             <div class="columns">
@@ -56,17 +55,17 @@
                 </div>
                 <div class="column is-4">
 
-<!--                    <vue-filter class="box"-->
-<!--                                :options="dealtBy"-->
-<!--                                title="Dealt By"-->
-<!--                                v-model="filters.queries.q_dealt_by"-->
-<!--                    >-->
-<!--                    </vue-filter>-->
+                    <!--                    <vue-filter class="box"-->
+                    <!--                                :options="dealtBy"-->
+                    <!--                                title="Dealt By"-->
+                    <!--                                v-model="filters.queries.q_dealt_by"-->
+                    <!--                    >-->
+                    <!--                    </vue-filter>-->
                     <select-filter title="Dealt By"
                                    :multiple="true"
                                    :options="dealtBy"
                                    label="label"
-                                   trackBy = "label"
+                                   trackBy="label"
                                    class="box"
                                    v-model="filters.queries.q_dealt_by"/>
                 </div>
@@ -121,11 +120,11 @@
                                          placeholder="Pick a value" :multiple="true" :taggable="true">
 
                             </multiselect>
-<!--                            <vue-select source="/select/courses"-->
-<!--                                        label="c_title"-->
-<!--                                        multiple-->
-<!--                                        v-model="selectedQuery.courses">-->
-<!--                            </vue-select>-->
+                            <!--                            <vue-select source="/select/courses"-->
+                            <!--                                        label="c_title"-->
+                            <!--                                        multiple-->
+                            <!--                                        v-model="selectedQuery.courses">-->
+                            <!--                            </vue-select>-->
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -155,28 +154,39 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-4">
                         <div class="form-group mg-b-10-force">
                             <label class="form-control-label">Status </label>
                             <select name="" id="" v-model="selectedQuery.q_is_converted" class="form-control">
-                                <option value="Not Converted">Not Converted</option>
                                 <option value="Rejected">Rejected</option>
                                 <option value="Follow Up">Follow Up</option>
                                 <option value="Call">Call</option>
                                 <option value="Interested">Interested</option>
-                                <option value="Interested in Next Session">Interested in Next Session</option>
-                                <option value="Converted Successfully">Converted Successfully</option>
+                                <option value="Admission">Admission</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-4">
                         <div class="form-group mg-b-10-force">
                             <label class="form-control-label">Query Dealt By: </label>
-                            <multiselect  v-model="selectedQuery.q_dealt_by"
-                                         :options="['Miss Jiya','Miss Ayesha','Sir Abdullah','Sir Aakif']"
+                            <multiselect v-model="selectedQuery.q_dealt_by"
+                                         :options="['Miss Ismat','Miss Ayesha','Sir Abdullah','Sir Aakif']"
                                          :searchable="true" :close-on-select="true"
                                          placeholder="Pick a value"></multiselect>
 
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group mg-b-10-force">
+                            <label class="form-control-label">Next Follow Up </label>
+                            <div class="flex justify-content-between" v-show="!newDate">
+                                <span >{{selectedQuery.updated_at}}</span>
+                                <button class="btn btn-primary btn-small" @click="newDate = true">Add new date</button>
+                            </div>
+                            <div class="flex" v-show="newDate">
+                                <input type="datetime-local" class="form-control" v-model="selectedQuery.updated_at">
+<!--                                <button class="btn btn-default" @click="!newDate">Previous Date</button>-->
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-8">
@@ -191,7 +201,7 @@
                         <div class="form-group mg-b-10-force">
                             <label class="form-control-label">Comments: </label>
                             <textarea rows="10" class="form-control" type="text" name=""
-                                      value="" placeholder="Dealt By Comments"
+                                      placeholder="Dealt By Comments"
                                       v-model="selectedQuery.q_remarks"> </textarea>
                         </div>
                     </div><!-- col-8 -->
@@ -215,7 +225,7 @@
     import Multiselect from 'vue-multiselect';
     import {VueSelect} from '@enso-ui/select/bulma';
     import VueMask from 'v-mask';
-    import {  VueForm } from '@enso-ui/forms/bulma';
+    import {VueForm} from '@enso-ui/forms/bulma';
     import Toastr from '@enso-ui/toastr/bulma';
     import ToastrPlugin from '@enso-ui/toastr';
 
@@ -229,7 +239,7 @@
 
     Vue.use(VueMask);
     Vue.component('vue-select', VueSelect);
-    Vue.component('vue-form',VueForm);
+    Vue.component('vue-form', VueForm);
 
     Vue.component('vue-table', VueTable);
     Vue.component('vue-filter', VueFilter);
@@ -248,16 +258,14 @@
         data() {
             return {
                 q_is_converted: [
-                    {value: 'Not Converted', label: 'Not Converted'},
                     {value: 'Rejected', label: 'Rejected'},
                     {value: 'Follow Up', label: 'Follow Up'},
                     {value: 'Call', label: 'Call'},
                     {value: 'Interested', label: 'Interested'},
-                    {value: 'Interested in Next Session', label: 'Interested in Next Session'},
-                    {value: 'Converted Successfully', label: 'Converted Successfully'},
+                    {value: 'Admission', label: 'Admission'},
                 ],
                 dealtBy: [
-                    {value: 'Miss Jiya', label: 'Miss Jiya'},
+                    {value: 'Miss Ismat', label: 'Miss Ismat'},
                     {value: 'Miss Ayesha', label: 'Miss Ayesha'},
                     {value: 'Sir Abdullah', label: 'Sir Abdullah'},
                     {value: 'Sir Aakif', label: 'Sir Aakif'},
@@ -297,7 +305,8 @@
                 selectedModal: false,
                 mainPage: true,
                 editPage: false,
-                editPath:'',
+                editPath: '',
+                newDate:false,
             }
         },
         methods: {
@@ -331,16 +340,17 @@
                 this.selectedModal = false;
 
             },
-            update(){
+            update() {
                 this.$toastr.warning('Updating', 'Event');
-              this.$http.put('/queries/update',{query:this.selectedQuery})
-                  .then(dt=>{
-                this.$toastr.success(dt.data, 'Event');
-                    console.log(dt);
-                  })
-                  .catch(er=>{
-                      console.log(er);
-                  })
+                this.$http.put('/queries/update', {query: this.selectedQuery})
+                    .then(dt => {
+                        this.$toastr.success(dt.data, 'Event');
+                        console.log(dt);
+                    })
+                    .catch(er => {
+                        console.log(er);
+                    })
+                this.newDate = false;
             }
         }
 

@@ -197,6 +197,7 @@
             $query->q_dealt_by          = $queryData['q_dealt_by'];
             $query->q_is_converted      = $queryData['q_is_converted'];
             $query->q_remarks           = $queryData['comments'];
+            $query->updated_at          = Carbon::createFromFormat('Y-m-d\TH:i', $queryData['followUp']);
 
             if($query->save()) {
 
@@ -223,10 +224,22 @@ www.ace.org.pk
 
         }
 
+        function validateDate($date, $format = 'Y-m-d')
+        {
+            $d = DateTime::createFromFormat($format, $date);
+
+            // The Y ( 4 digits year ) returns TRUE for any integer with any number of digits so changing the comparison from == to === fixes the issue.
+            return $d && $d->format($format) === $date;
+        }
+
         public function update(Request $request)
         {
             $query       = $request->input('query');
             $queryPerson = Queries::where('id', $query['dtRowId'])->first();
+            $preFollow   = $queryPerson->updated_at;
+
+            $is_utc = $this->validateDate($query['updated_at'], 'Y-m-d\TH:i');
+
 
             $queryPerson->q_name              = $query['q_name'];
             $queryPerson->q_contact           = str_replace("-", "", $query['q_contact']);
@@ -237,6 +250,12 @@ www.ace.org.pk
             $queryPerson->q_interaction_type  = $query['q_interaction_type'];
             $queryPerson->q_is_converted      = $query['q_is_converted'];
             $queryPerson->q_dealt_by          = $query['q_dealt_by'];
+            if($is_utc) {
+                $queryPerson->updated_at = Carbon::createFromFormat('Y-m-d\TH:i', $query['updated_at']);
+            } else {
+                $queryPerson->updated_at = $preFollow;
+            }
+            $queryPerson->q_remarks = $query['q_remarks'];
 
             $qcourses = $query['coursesId'];
             $courses  = array();

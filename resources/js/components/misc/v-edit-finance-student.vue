@@ -1,7 +1,7 @@
 <template>
     <div>
         <button @click="openFinanceModal" class="btn btn-primary mt-2">Edit Finance</button>
-        
+
         <modal :show="modalOpen" @close="closeModal">
             <div class="box" style="padding:30px ;">
                 <div v-show="recTable">
@@ -25,7 +25,7 @@
                             <td class="text-center" v-html="$options.filters.paidStatus(recovery.paid_status)"></td>
                             <!--                        <td>{{recovery.slip_number}}</td>-->
                             <!--                        <td>{{recovery.paidOn}}</td>-->
-                        
+
                         </tr>
                         <tr>
                             <td colspan="2" class="text-right">Total Remaining</td>
@@ -86,7 +86,7 @@
 </template>
 
 <script>
-    import moment from 'Moment';
+    import moment from 'moment';
     import {Modal} from '@enso-ui/modal/bulma';
     import Toastr from '@enso-ui/toastr/bulma';
     import ToastrPlugin from '@enso-ui/toastr';

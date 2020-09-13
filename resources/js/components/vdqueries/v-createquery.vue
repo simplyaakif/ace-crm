@@ -58,27 +58,32 @@
 
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <div class="form-group mg-b-10-force">
                         <label class="form-control-label">Query Conversion </label>
                         <select name="" id="" v-model="query.q_is_converted" class="form-control">
-                            <option value="Not Converted">Not Converted</option>
                             <option value="Rejected">Rejected</option>
                             <option value="Follow Up">Follow Up</option>
                             <option value="Call">Call</option>
                             <option value="Interested">Interested</option>
-                            <option value="Interested in Next Session">Interested in Next Session</option>
-                            <option value="Converted Successfully">Converted Successfully</option>
+                            <option value="Admission">Admission</option>
                         </select>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <div class="form-group mg-b-10-force">
                         <label class="form-control-label">Query Dealt By: </label>
                         <multiselect  v-model="query.q_dealt_by"
-                                      :options="['Miss Ayesha','Miss Jiya','Sir Aakif','Sir Abdullah']"
+                                      :options="['Miss Ayesha','Miss Ismat','Sir Aakif','Sir Abdullah']"
                                       :searchable="true" :close-on-select="true"
                                       placeholder="Pick a value"></multiselect>
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group mg-b-10-force">
+                        <label class="form-control-label">Next Follow Up </label>
+                        <input type="datetime-local" v-model="query.followUp" class="form-control">
 
                     </div>
                 </div>
@@ -146,6 +151,7 @@
                     comments: '',
                     q_dealt_by:'',
                     q_is_converted:'',
+                    followUp:'',
                 },
                 sendSms: false,
                 sendMail: false,

@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9369e36b-d4c9-457a-83fb-e0faf15d4994" name="Default Changelist" comment="" />
+    <list default="true" id="9369e36b-d4c9-457a-83fb-e0faf15d4994" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QueriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QueriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Tables/QueryTb.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Tables/QueryTb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Tables/Template/queryTable.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Tables/Template/queryTable.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Queries.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Queries.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/vendor/MediaManager/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/vendor/MediaManager/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bracket.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/bracket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/components/v-createquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-createquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/components/v-edit-finance-student.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-edit-finance-student.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/components/v-expenses-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-expenses-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/components/v-recovery-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-recovery-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/components/v-table-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-table-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/components/vendors~v-bar-chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/vendors~v-bar-chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/misc/v-edit-finance-student.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/misc/v-edit-finance-student.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/misc/v-expenses-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/misc/v-expenses-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/misc/v-recovery-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/misc/v-recovery-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/misc/v-table-data.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/misc/v-table-data.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/vdqueries/v-createquery.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/vdqueries/v-createquery.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -448,7 +471,8 @@
       <workItem from="1598907126632" duration="2235000" />
       <workItem from="1598943296066" duration="5356000" />
       <workItem from="1599029203110" duration="7835000" />
-      <workItem from="1599208188273" duration="265000" />
+      <workItem from="1599208188273" duration="992000" />
+      <workItem from="1599996686281" duration="9326000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1563644088486</created>
@@ -499,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585838823103</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Git Repo Regeneration">
+      <created>1599208690045</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599208690045</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,9 +581,14 @@
     <MESSAGE value="Charts Done. Month Wise &amp; Year Wise" />
     <MESSAGE value="Query Charts Done. Month Wise &amp; Year Wise" />
     <MESSAGE value="Query Charts Refactor to a Single Method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Query Charts Refactor to a Single Method" />
+    <MESSAGE value="Git Repo Regeneration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Git Repo Regeneration" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="106" y="0" key="CommitChangelistDialog2" timestamp="1599208651919">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="106" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1599208651919" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1599029275848">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -561,9 +597,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="505" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1598907461780" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1599035109451">
+    <state x="390" y="99" width="585" height="530" key="find.popup" timestamp="1600000811156">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1599035109451" />
+    <state x="390" y="99" width="585" height="530" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600000811156" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1600005260150">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600005260150" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600005250913">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1600005250913" />
   </component>
 </project>

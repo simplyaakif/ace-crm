@@ -59,10 +59,10 @@ Vue.component('fa',
 
 // Vue.component('example-component', () => import(/* webpackChunkName:"example-component" */ './components/ExampleComponent.vue'));
 // Vue.component('modal', () => import(/* webpackChunkName:"modal" */ Modal));
-Vue.component('v-searchquery', () => import(/* webpackChunkName:"v-searchquery" */ './components/vdqueries/v-searchquery.vue'));
+// Vue.component('v-searchquery', () => import(/* webpackChunkName:"v-searchquery" */ './components/vdqueries/v-searchquery.vue'));
 Vue.component('v-createquery', () => import(/* webpackChunkName:"v-createquery" */ './components/vdqueries/v-createquery.vue'));
 Vue.component('v-createadmission', () => import(/* webpackChunkName:"v-createadmission" */ './components/vdadmissions/v-createadmission.vue'));
-Vue.component('v-searchadmission', () => import(/* webpackChunkName:"v-searchadmission" */ './components/vdadmissions/v-searchadmission.vue'));
+// Vue.component('v-searchadmission', () => import(/* webpackChunkName:"v-searchadmission" */ './components/vdadmissions/v-searchadmission.vue'));
 Vue.component('v-batches', () => import(/* webpackChunkName:"v-batches" */ './components/vdacademics/v-batches.vue'));
 Vue.component('v-monthly-batch-admissions', () => import(/* webpackChunkName:"v-monthlyBatchAdmissions" */ './components/misc/v-monthlyBatchAdmissions.vue'));
 Vue.component('v-student', () => import(/* webpackChunkName:"v-student" */ './components/misc/v-student.vue'));

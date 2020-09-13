@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Queries extends Model
 {
 
-    protected $casts = ['q_is_converted' => 'boolean'];
+//    protected $casts = ['q_is_converted' => 'boolean'];
 //    public function getCreatedAtAttribute($value)
 //    {
 //        return Carbon::parse($value)->format('Y-m-d');

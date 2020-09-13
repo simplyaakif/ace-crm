@@ -39,9 +39,9 @@
                     </div>
                 </div>
             </div>
-        
+
         </div>
-        
+
         <vue-table class="box is-paddingless raises-on-hover is-rounded"
                    :path="url"
                    :intervals="intervals"
@@ -56,14 +56,14 @@
             <span slot="status"
                   slot-scope="props">
                 <span v-html="$options.filters.dueTag(props.row.dueDate)"></span>
-    
+
                 <!--                <span>-->
                 <!--                       {{ props.row.dueDate}}-->
                 <!--                </span>-->
-                
+
                     </span>
         </vue-table>
-    
+
     </div>
 </template>
 
@@ -71,7 +71,7 @@
     import {VueTable} from '@enso-ui/tables/bulma';
     import {DateFilter, DateIntervalFilter, SelectFilter, VueFilter} from '@enso-ui/filters/bulma';
     import {VueSelect} from '@enso-ui/select/bulma';
-    import moment from 'Moment';
+    import moment from 'moment';
     import Toastr from '@enso-ui/toastr/bulma';
     import ToastrPlugin from '@enso-ui/toastr';
     Vue.use(ToastrPlugin, {
