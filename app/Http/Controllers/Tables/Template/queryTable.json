@@ -79,7 +79,8 @@
       "name": "q_is_converted",
       "data": "queries.q_is_converted",
       "meta": [
-        "sortable"
+        "sortable",
+          "slot"
       ]
     },
     {

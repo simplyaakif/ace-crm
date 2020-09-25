@@ -52,7 +52,7 @@
                     <div class="form-group mg-b-10-force">
                         <label class="form-control-label">Query Recieved As: </label>
                         <multiselect v-model="query.queryRecievedAs"
-                                     :options="['On Campus Visit','Phone Call','Online Registration','Online Chat']"
+                                     :options="['On Campus Visit','Phone Call','Online Registration','Online Chat (Tawk.to)']"
                                      :searchable="true" :close-on-select="true"
                                      placeholder="Pick a value"></multiselect>
 
@@ -62,10 +62,13 @@
                     <div class="form-group mg-b-10-force">
                         <label class="form-control-label">Query Conversion </label>
                         <select name="" id="" v-model="query.q_is_converted" class="form-control">
-                            <option value="Rejected">Rejected</option>
-                            <option value="Follow Up">Follow Up</option>
                             <option value="Call">Call</option>
                             <option value="Interested">Interested</option>
+                            <option value="Information">Information</option>
+                            <option value="Evaluation Done">Evaluation Done</option>
+                            <option value="Fee Pending">Fee Pending</option>
+                            <option value="Rejected">Rejected</option>
+                            <option value="Follow Up">Follow Up</option>
                             <option value="Admission">Admission</option>
                         </select>
                     </div>

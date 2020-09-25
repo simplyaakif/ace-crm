@@ -139,6 +139,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 
@@ -449,7 +452,7 @@ var render = function() {
                     "On Campus Visit",
                     "Phone Call",
                     "Online Registration",
-                    "Online Chat"
+                    "Online Chat (Tawk.to)"
                   ],
                   searchable: true,
                   "close-on-select": true,
@@ -506,18 +509,30 @@ var render = function() {
                 }
               },
               [
+                _c("option", { attrs: { value: "Call" } }, [_vm._v("Call")]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "Interested" } }, [
+                  _vm._v("Interested")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "Information" } }, [
+                  _vm._v("Information")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "Evaluation Done" } }, [
+                  _vm._v("Evaluation Done")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "Fee Pending" } }, [
+                  _vm._v("Fee Pending")
+                ]),
+                _vm._v(" "),
                 _c("option", { attrs: { value: "Rejected" } }, [
                   _vm._v("Rejected")
                 ]),
                 _vm._v(" "),
                 _c("option", { attrs: { value: "Follow Up" } }, [
                   _vm._v("Follow Up")
-                ]),
-                _vm._v(" "),
-                _c("option", { attrs: { value: "Call" } }, [_vm._v("Call")]),
-                _vm._v(" "),
-                _c("option", { attrs: { value: "Interested" } }, [
-                  _vm._v("Interested")
                 ]),
                 _vm._v(" "),
                 _c("option", { attrs: { value: "Admission" } }, [

@@ -85,6 +85,11 @@
               <span slot="q_name"
                     slot-scope="props">
                         {{ props.row.q_name }}
+                        </span>
+                <span slot="q_is_converted"
+                      slot-scope="props">
+                <span v-html="$options.filters.is_converted_tag(props.row.q_is_converted)"></span>
+
                     </span>
             </vue-table>
         </div>
@@ -148,7 +153,7 @@
                         <div class="form-group mg-b-10-force">
                             <label class="form-control-label">Query Recieved As: </label>
                             <multiselect v-model="selectedQuery.q_interaction_type"
-                                         :options="['On Campus Visit','Phone Call','Online Registration','Online Chat']"
+                                         :options="['On Campus Visit','Phone Call','Online Registration','Online Chat (Tawk.to)']"
                                          :searchable="true" :close-on-select="true"
                                          placeholder="Pick a value"></multiselect>
 
@@ -158,10 +163,13 @@
                         <div class="form-group mg-b-10-force">
                             <label class="form-control-label">Status </label>
                             <select name="" id="" v-model="selectedQuery.q_is_converted" class="form-control">
-                                <option value="Rejected">Rejected</option>
-                                <option value="Follow Up">Follow Up</option>
                                 <option value="Call">Call</option>
                                 <option value="Interested">Interested</option>
+                                <option value="Information">Information</option>
+                                <option value="Evaluation Done">Evaluation Done</option>
+                                <option value="Fee Pending">Fee Pending</option>
+                                <option value="Rejected">Rejected</option>
+                                <option value="Follow Up">Follow Up</option>
                                 <option value="Admission">Admission</option>
                             </select>
                         </div>
@@ -255,13 +263,40 @@
             url: String,
             courses: Array,
         },
+        filters: {
+            is_converted_tag: function (value) {
+                // return moment(current).isAfter(moment(), 'day');
+                if ( value ==='Rejected') {
+                    return '<span class="tag is-table-tag is-danger">'+value+'</span>';
+                } else if(value === 'Admission')  {
+                    return '<span class="tag is-table-tag is-success">'+value+'</span>';
+                } else if(value === '1')  {
+                    return '<span class="tag is-table-tag is-success">Admission</span>';
+                }else if(value === 'Call')  {
+                    return '<span class="tag is-table-tag is-info">'+value+'</span>';
+                }else if(value === 'Interested')  {
+                    return '<span class="tag is-table-tag is-primary">'+value+'</span>';
+                }else if(value === 'Follow Up')  {
+                    return '<span class="tag is-table-tag is-warning">'+value+'</span>';
+                }else if(value === null)  {
+                    return '<span class="tag is-table-tag is-warning">Follow Up</span>';
+                }else if(value === '0')  {
+                    return '<span class="tag is-table-tag is-danger">Rejected</span>';
+                }else{
+                    return `<span class="tag is-table-tag ">${value}</span>`;
+                }
+            }
+        },
         data() {
             return {
                 q_is_converted: [
-                    {value: 'Rejected', label: 'Rejected'},
-                    {value: 'Follow Up', label: 'Follow Up'},
                     {value: 'Call', label: 'Call'},
                     {value: 'Interested', label: 'Interested'},
+                    {value: 'Information', label: 'Information'},
+                    {value: 'Evaluation Done', label: 'Evaluation Done'},
+                    {value: 'Fee Pending', label: 'Fee Pending'},
+                    {value: 'Rejected', label: 'Rejected'},
+                    {value: 'Follow Up', label: 'Follow Up'},
                     {value: 'Admission', label: 'Admission'},
                 ],
                 dealtBy: [
@@ -274,7 +309,7 @@
                     {q_interaction_type: 'On Campus Visit', id: 0},
                     {q_interaction_type: 'Phone Call', id: 1},
                     {q_interaction_type: 'Online Registration', id: 2},
-                    {q_interaction_type: 'Online Chat', id: 3},
+                    {q_interaction_type: 'Online Chat (Tawk.to)', id: 3},
                 ],
                 scopedSlots: ["q_name"],
                 ic: true,

@@ -239,6 +239,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -271,20 +279,53 @@ Vue.component('multiselect', vue_multiselect__WEBPACK_IMPORTED_MODULE_3___defaul
     url: String,
     courses: Array
   },
+  filters: {
+    is_converted_tag: function is_converted_tag(value) {
+      // return moment(current).isAfter(moment(), 'day');
+      if (value === 'Rejected') {
+        return '<span class="tag is-table-tag is-danger">' + value + '</span>';
+      } else if (value === 'Admission') {
+        return '<span class="tag is-table-tag is-success">' + value + '</span>';
+      } else if (value === '1') {
+        return '<span class="tag is-table-tag is-success">Admission</span>';
+      } else if (value === 'Call') {
+        return '<span class="tag is-table-tag is-info">' + value + '</span>';
+      } else if (value === 'Interested') {
+        return '<span class="tag is-table-tag is-primary">' + value + '</span>';
+      } else if (value === 'Follow Up') {
+        return '<span class="tag is-table-tag is-warning">' + value + '</span>';
+      } else if (value === null) {
+        return '<span class="tag is-table-tag is-warning">Follow Up</span>';
+      } else if (value === '0') {
+        return '<span class="tag is-table-tag is-danger">Rejected</span>';
+      } else {
+        return "<span class=\"tag is-table-tag \">".concat(value, "</span>");
+      }
+    }
+  },
   data: function data() {
     return {
       q_is_converted: [{
-        value: 'Rejected',
-        label: 'Rejected'
-      }, {
-        value: 'Follow Up',
-        label: 'Follow Up'
-      }, {
         value: 'Call',
         label: 'Call'
       }, {
         value: 'Interested',
         label: 'Interested'
+      }, {
+        value: 'Information',
+        label: 'Information'
+      }, {
+        value: 'Evaluation Done',
+        label: 'Evaluation Done'
+      }, {
+        value: 'Fee Pending',
+        label: 'Fee Pending'
+      }, {
+        value: 'Rejected',
+        label: 'Rejected'
+      }, {
+        value: 'Follow Up',
+        label: 'Follow Up'
       }, {
         value: 'Admission',
         label: 'Admission'
@@ -312,7 +353,7 @@ Vue.component('multiselect', vue_multiselect__WEBPACK_IMPORTED_MODULE_3___defaul
         q_interaction_type: 'Online Registration',
         id: 2
       }, {
-        q_interaction_type: 'Online Chat',
+        q_interaction_type: 'Online Chat (Tawk.to)',
         id: 3
       }],
       scopedSlots: ["q_name"],
@@ -625,8 +666,24 @@ var render = function() {
                   _vm._v(
                     "\n                        " +
                       _vm._s(props.row.q_name) +
-                      "\n                    "
+                      "\n                        "
                   )
+                ])
+              }
+            },
+            {
+              key: "q_is_converted",
+              fn: function(props) {
+                return _c("span", {}, [
+                  _c("span", {
+                    domProps: {
+                      innerHTML: _vm._s(
+                        _vm.$options.filters.is_converted_tag(
+                          props.row.q_is_converted
+                        )
+                      )
+                    }
+                  })
                 ])
               }
             }
@@ -858,7 +915,7 @@ var render = function() {
                         "On Campus Visit",
                         "Phone Call",
                         "Online Registration",
-                        "Online Chat"
+                        "Online Chat (Tawk.to)"
                       ],
                       searchable: true,
                       "close-on-select": true,
@@ -917,20 +974,32 @@ var render = function() {
                     }
                   },
                   [
-                    _c("option", { attrs: { value: "Rejected" } }, [
-                      _vm._v("Rejected")
-                    ]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "Follow Up" } }, [
-                      _vm._v("Follow Up")
-                    ]),
-                    _vm._v(" "),
                     _c("option", { attrs: { value: "Call" } }, [
                       _vm._v("Call")
                     ]),
                     _vm._v(" "),
                     _c("option", { attrs: { value: "Interested" } }, [
                       _vm._v("Interested")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "Information" } }, [
+                      _vm._v("Information")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "Evaluation Done" } }, [
+                      _vm._v("Evaluation Done")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "Fee Pending" } }, [
+                      _vm._v("Fee Pending")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "Rejected" } }, [
+                      _vm._v("Rejected")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "Follow Up" } }, [
+                      _vm._v("Follow Up")
                     ]),
                     _vm._v(" "),
                     _c("option", { attrs: { value: "Admission" } }, [

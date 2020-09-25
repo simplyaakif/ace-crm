@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9369e36b-d4c9-457a-83fb-e0faf15d4994" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QueriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QueriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Tables/QueryTb.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Tables/QueryTb.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Tables/Template/queryTable.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Tables/Template/queryTable.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Queries.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Queries.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/MediaManager/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/vendor/MediaManager/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/bracket.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/bracket.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/table.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/components/v-batches.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-batches.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/components/v-createquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-createquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/components/v-edit-finance-student.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-edit-finance-student.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/components/v-expenses-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-expenses-table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/components/v-recovery-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-recovery-table.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/components/v-table-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-table-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/components/vendors~v-bar-chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/vendors~v-bar-chart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/misc/v-edit-finance-student.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/misc/v-edit-finance-student.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/misc/v-expenses-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/misc/v-expenses-table.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/misc/v-recovery-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/misc/v-recovery-table.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/misc/v-table-data.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/misc/v-table-data.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/vdqueries/v-createquery.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/vdqueries/v-createquery.vue" afterDir="false" />
     </list>
@@ -69,7 +55,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="adminRoleRights" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -250,7 +236,24 @@
       <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Http\Controllers\Tables\Template" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.QueriesTest">
+  <component name="RunManager" selected="PHPUnit.QueriesChartTest.queries_visit_data">
+    <configuration name="QueriesChartTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\QueriesChartTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/QueriesChartTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="QueriesChartTest.queries_visit_data" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.2" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\QueriesChartTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/QueriesChartTest.php" method="queries_visit_data" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="QueriesChartTest.query_count_for_whole_year" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\QueriesChartTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/QueriesChartTest.php" method="query_count_for_whole_year" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="QueriesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\QueriesTest" file="$PROJECT_DIR$/tests/Feature/QueriesTest.php" scope="Class" />
       <method v="2" />
@@ -272,6 +275,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="PHPUnit.QueriesTest" />
+        <item itemvalue="PHPUnit.QueriesChartTest.query_count_for_whole_year" />
+        <item itemvalue="PHPUnit.QueriesChartTest.queries_visit_data" />
+        <item itemvalue="PHPUnit.QueriesChartTest" />
         <item itemvalue="npm.watch" />
       </list>
     </recent_temporary>
@@ -589,6 +595,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="106" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1599208651919" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1601011594681">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1601011594681" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1599029275848">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -605,9 +615,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600005260150" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600005250913">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1601011124486">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1600005250913" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601011124486" />
   </component>
 </project>
