@@ -70,6 +70,7 @@
                             <option value="Rejected">Rejected</option>
                             <option value="Follow Up">Follow Up</option>
                             <option value="Admission">Admission</option>
+                            <option value="Admission">Call up for demo</option>
                         </select>
                     </div>
                 </div>
@@ -77,7 +78,7 @@
                     <div class="form-group mg-b-10-force">
                         <label class="form-control-label">Query Dealt By: </label>
                         <multiselect  v-model="query.q_dealt_by"
-                                      :options="['Miss Ayesha','Miss Ismat','Sir Aakif','Sir Abdullah']"
+                                      :options="['Miss Ayesha','Miss Anum','Sir Aakif','Sir Abdullah']"
                                       :searchable="true" :close-on-select="true"
                                       placeholder="Pick a value"></multiselect>
 

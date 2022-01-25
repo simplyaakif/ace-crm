@@ -455,7 +455,7 @@ Vue.component('multiselect', vue_multiselect__WEBPACK_IMPORTED_MODULE_1___defaul
         }).then(function (data) {
           _this.$swal.close();
 
-          _this.$swal("Completed", "Query Added Successfully", "success");
+          _this.$swal("Completed", "Candidate Admitted Successfully", "success");
 
           _this.clear();
         })["catch"](function (err) {

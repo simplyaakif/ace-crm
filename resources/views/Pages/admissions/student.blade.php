@@ -73,9 +73,9 @@
 {{--                                    </div>--}}
 {{--                                </div>--}}
 {{--                            </v-media-manager>--}}
-                            <v-upload-dp
-                                    :id= {{$student->id}}
-                            ></v-upload-dp>
+{{--                            <v-upload-dp--}}
+{{--                                    :id= {{$student->id}}--}}
+{{--                            ></v-upload-dp>--}}
                         </div>
 
                         <ul class="list-unstyled tx-14 p-3 mb-0">
@@ -232,16 +232,8 @@
 
                                             </td>
                                         @else
-                                            <td colspan="2" class="text-center">
-                                                <a onclick="return confirm('Are you sure? This is irreversible. Count' +
-                                             ' the money again and then confirm.')"
-                                                   href="{{url('finance/pay\/').$fee->id}}"
-                                                   class="btn btn-sm
-                                                btn-teal">Pay
-                                                    Now</a>
-                                            </td>
                                             <td><v-pay-recovery
-                                                id="{{$fee->id}}"
+                                                    id="{{$fee->id}}"
                                                 ></v-pay-recovery></td>
                                         @endif
                                     </tr>

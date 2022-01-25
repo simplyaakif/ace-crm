@@ -80,6 +80,7 @@ class FinanceController extends Controller
         return 'Successfully paid the Recovery. Kindly refresh to see the changes.';
     }
 
+
     public function admissions(){
         return view('pages.finance.finance_admissions');
     }

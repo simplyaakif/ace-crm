@@ -331,8 +331,8 @@ Vue.component('multiselect', vue_multiselect__WEBPACK_IMPORTED_MODULE_3___defaul
         label: 'Admission'
       }],
       dealtBy: [{
-        value: 'Miss Ismat',
-        label: 'Miss Ismat'
+        value: 'Miss Anum',
+        label: 'Miss Anum'
       }, {
         value: 'Miss Ayesha',
         label: 'Miss Ayesha'
@@ -1022,7 +1022,7 @@ var render = function() {
                   _c("multiselect", {
                     attrs: {
                       options: [
-                        "Miss Ismat",
+                        "Miss Anum",
                         "Miss Ayesha",
                         "Sir Abdullah",
                         "Sir Aakif"

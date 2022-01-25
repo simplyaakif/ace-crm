@@ -12,6 +12,7 @@
                 <span class="menu-item-label">Dashboard</span>
             </div><!-- menu-item -->
         </a><!-- br-menu-link -->
+        @if(auth()->user()->permissions == "admin" || auth()->user()->permissions == "manager" )
         <a href="#" class="br-menu-link {{ Request::is('queries/*') ? 'active show-sub' : '' }}">
             <div class="br-menu-item ">
                 <i class="menu-item-icon icon ion-ios-filing-outline tx-24"></i>
@@ -81,6 +82,10 @@
             <li class="nav-item"><a href="{{route('academics_batches')}}"
                                     class="nav-link {{ Request::is('notifications/batches') ? 'active' : ''
                                     }}">Batch Notifications</a></li>
+
+            <li class="nav-item"><a href="{{route('academics_batches')}}"
+                                    class="nav-link {{ Request::is('notifications/batches') ? 'active' : ''
+                                    }}">Manage Lesson Planner</a></li>
         </ul>
         {{--<a href="card-dashboard.html" class="br-menu-link">--}}
         {{--<div class="br-menu-item">--}}
@@ -91,7 +96,7 @@
 
         <a href="#" class="br-menu-link {{ Request::is('finance/*') ? 'active show-sub' : '' }}">
             <div class="br-menu-item">
-                <i class="menu-item-icon icon ion-ios-gear-outline tx-24"></i>
+                <i class="menu-item-icon lessoicon ion-ios-gear-outline tx-24"></i>
                 <span class="menu-item-label">Finance</span>
                 <i class="menu-item-arrow fa fa-angle-down"></i>
             </div><!-- menu-item -->
@@ -120,6 +125,7 @@
             <li class="nav-item"><a href="{{route('hr_members')}}" class="nav-link">Members</a></li>
             <li class="nav-item"><a href="table-datatable.html" class="nav-link">Roles</a></li>
         </ul>
+        @endif
         {{--<a href="#" class="br-menu-link">--}}
         {{--<div class="br-menu-item">--}}
         {{--<i class="menu-item-icon icon ion-ios-navigate-outline tx-24"></i>--}}

@@ -142,6 +142,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -537,6 +538,10 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", { attrs: { value: "Admission" } }, [
                   _vm._v("Admission")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "Admission" } }, [
+                  _vm._v("Call up for demo")
                 ])
               ]
             )
@@ -556,7 +561,7 @@ var render = function() {
                 attrs: {
                   options: [
                     "Miss Ayesha",
-                    "Miss Ismat",
+                    "Miss Anum",
                     "Sir Aakif",
                     "Sir Abdullah"
                   ],

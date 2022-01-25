@@ -61,20 +61,46 @@ class HomeController extends Controller
             ->get();
 
 
-        $todaySale = DB::table('recoveries')
-            ->where('paid_status','=','1')
-            ->where('paidOn','=',Carbon::today())
+        $todaySale = DB::table('batches')
+            ->join('batch_admission','batches.id','=','batch_admission.batch_id')
+            ->join('recoveries', 'recoveries.registered_batch_id', '=', 'batch_admission.id')
+            ->where('batches.is_online','=','0')
+            ->where('recoveries.paid_status','=','1')
+            ->where('recoveries.paidOn','=',Carbon::today())
             ->sum('instAmount');
+
+        $monthSale = DB::table('batches')
+            ->join('batch_admission','batches.id','=','batch_admission.batch_id')
+            ->join('recoveries', 'recoveries.registered_batch_id', '=', 'batch_admission.id')
+            ->where('batches.is_online','=','0')
+            ->where('recoveries.paid_status','=','1')
+            ->whereBetween('paidOn',[Carbon::now()->startOfMonth(),Carbon::now()->endOfMonth()])
+            ->sum('instAmount');
+
+
+        $todayOnlineSale = DB::table('batches')
+            ->join('batch_admission','batches.id','=','batch_admission.batch_id')
+            ->join('recoveries', 'recoveries.registered_batch_id', '=', 'batch_admission.id')
+            ->where('batches.is_online','=','1')
+            ->where('recoveries.paid_status','=','1')
+            ->where('recoveries.paidOn','=',Carbon::today())
+            ->sum('instAmount');
+
+        $monthOnlineSale = DB::table('batches')
+            ->join('batch_admission','batches.id','=','batch_admission.batch_id')
+            ->join('recoveries', 'recoveries.registered_batch_id', '=', 'batch_admission.id')
+            ->where('batches.is_online','=','1')
+            ->where('recoveries.paid_status','=','1')
+            ->whereBetween('paidOn',[Carbon::now()->startOfMonth(),Carbon::now()->endOfMonth()])
+            ->sum('instAmount');
+
 
         $yesSale = DB::table('recoveries')
             ->where('paid_status','=','1')
             ->where('paidOn','=',Carbon::today()->sub(1,'day'))
             ->sum('instAmount');
 
-        $monthSale = DB::table('recoveries')
-            ->where('paid_status','=','1')
-            ->whereBetween('paidOn',[Carbon::now()->startOfMonth(),Carbon::now()->endOfMonth()])
-            ->sum('instAmount');
+
 
         $fromDate = Carbon::now()->subMonth()->startOfMonth()->toDateString();
         $tillDate = Carbon::now()->subMonth()->endOfMonth()->toDateString();
@@ -108,7 +134,7 @@ class HomeController extends Controller
         }
 
 
-        return view('pages.dashboard.dash',compact('monthDayWiseSaleDates','monthDayWiseSaleAmount','dtDy','saleMax','yearMonth','yearMonthSaleAmount','yearMax'
+        return view('pages.dashboard.dash',compact('monthDayWiseSaleDates','monthDayWiseSaleAmount','dtDy','saleMax','yearMonth','yearMonthSaleAmount','yearMax','todayOnlineSale','monthOnlineSale'
         ))->with('todayQueries',$todayQueries)
             ->with('yesterQueries',$yesterQueries)->with('weekQueries',$weekQueries)
             ->with('admissions',$admissions)->with('recoveries',$recoveries)
@@ -172,7 +198,9 @@ class HomeController extends Controller
     {
         $yearMonthWiseSaleAmount = [];
         foreach($yearMonthWiseSaleDates as $key => $month ) {
-            $amount = Recovery::where('paid_status', '=', '1')->whereMonth('paidOn', '=', $key)->sum('instAmount');
+//            $amount = Recovery::where('paid_status', '=', '1')->whereMonth('paidOn', '=', $key)->sum('instAmount');
+//            array_push($yearMonthWiseSaleAmount, $amount);
+            $amount = Recovery::where('paid_status', '=', '1')->whereMonth('paidOn', '=', $key)->whereYear('paidOn','=',Carbon::now()->year)->sum('instAmount');
             array_push($yearMonthWiseSaleAmount, $amount);
         }
 

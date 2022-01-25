@@ -40,9 +40,11 @@
             ])->count();
 
             $currentMonth = date('m');
+//            $monthQueries
+//                          = DB::table('queries')->whereRaw('MONTH(created_at) = ?', [$currentMonth])//                ->whereBetween('created_at', [Carbon::now()->startOfWeek(),Carbon::now()->endOfWeek()])
+//            ->count();
             $monthQueries
-                          = DB::table('queries')->whereRaw('MONTH(created_at) = ?', [$currentMonth])//                ->whereBetween('created_at', [Carbon::now()->startOfWeek(),Carbon::now()->endOfWeek()])
-            ->count();
+                = DB::table('queries')->whereRaw('MONTH(created_at) = ?', [$currentMonth])->whereRaw('YEAR(created_at) = YEAR(CURRENT_DATE())')->count();
 
             $fromDate = Carbon::now()->subMonth()->startOfMonth()->toDateString();
             $tillDate = Carbon::now()->subMonth()->endOfMonth()->toDateString();

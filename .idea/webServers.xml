@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="71c71d4c-44e8-4db6-9e8f-a711c2179d62" name="Payplus">
+        <fileTransfer rootFolder="/var/www/payplus.pk" accessType="SFTP" host="115.186.176.98" port="2442" sshConfigId="ae712c0e-0428-40e5-a907-9e055d78f760" sshConfig="toplist@115.186.176.98:2442 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

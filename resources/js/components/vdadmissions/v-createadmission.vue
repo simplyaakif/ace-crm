@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="form-layout form-layout-1">
-            
+
             <div class="row mg-b-25">
                 <div class="col-lg-12">
                     <h5>Personal Details</h5>
@@ -64,13 +64,13 @@
                                placeholder="Enter CNIC Number" v-model="admissionDetails.cnic">
                     </div>
                 </div><!-- col-4 -->
-                
+
                 <div class="col-lg-12">
                     <hr>
                     <h5>Contact Details</h5>
                     <hr>
                 </div>
-                
+
                 <div class="col-lg-4">
                     <div class="form-group">
                         <label class="form-control-label">Mobile Number: <span class="tx-danger">*</span></label>
@@ -99,7 +99,7 @@
                                   v-model="admissionDetails.address"></textarea>
                     </div>
                 </div><!-- col-4 -->
-                
+
                 <div class="col-lg-12">
                     <hr>
                     <h5>Parent/Guardian Details</h5>
@@ -154,7 +154,7 @@
                                placeholder="Enter Email Address" v-model="guardian.email">
                     </div>
                 </div><!-- col-4 -->
-                
+
                 <div class="col-lg-12 bg-gray-100 pb-3">
                     <hr>
                     <h5>Batch & Finance Details</h5>
@@ -170,14 +170,14 @@
                                          :allow-empty="false"
                                          :preselect-first="true"
                                          placeholder="Add Batches">
-                            
+
                             </multiselect>
                         </div>
                         <div class="col-md-2">
                             <button class="btn btn-teal" @click="addBatRow">Add New Batch</button>
                         </div>
                     </div>
-                    
+
                     <div class="card my-3" v-for="(bat,k) in studentBat" :key="k">
                         <div class="card-body">
                             <h4 class="card-title d-flex justify-content-between">{{bat.course_name}} -
@@ -197,13 +197,13 @@
                                     <div class="form-group">
                                         <label class="form-control-label">Session Start Date: <span
                                                 class="tx-danger">*</span></label>
-                                        
+
                                         <VueCtkDateTimePicker minute-interval="15" label="Select Start Date"
                                                               color="#138496"
                                                               format="YYYY-MM-DD"
                                                               :only-date=true v-model="bat.start_date"
                                                               formatted="DD MMM YYYY"></VueCtkDateTimePicker>
-                                    
+
                                     </div>
                                 </div><!-- col-4 -->
                                 <div class="col-lg-4">
@@ -258,7 +258,7 @@
                                                               format="YYYY-MM-DD"
                                                               :only-date=true v-model="single.instDueDate"
                                                               formatted="DD MMM YYYY"></VueCtkDateTimePicker>
-                                    
+
                                     </td>
                                     <td>
                                         <select class="form-control" v-model="single.instFeeStatus" name="" id="">
@@ -280,12 +280,12 @@
                                 </tr>
                                 </tbody>
                             </table>
-                        
+
                         </div>
                     </div>
-                
+
                 </div>
-                
+
                 <div class="col-lg-12">
                     <hr>
                     <h5>Notifications</h5>
@@ -299,9 +299,9 @@
                     <label class="form-control-label">Send EMAIL:</label>
                     <switches theme="bootstrap" v-model="sendMail" color="danger"></switches>
                 </div>
-            
+
             </div><!-- row -->
-            
+
             <div class="form-layout-footer">
                 <button :disabled="submitDisable" class="btn btn-info" @click="newAdmission">Save Admission Info
                 </button>
@@ -441,7 +441,7 @@
                             this.$swal.close();
                             this.$swal(
                                 "Completed",
-                                "Query Added Successfully",
+                                "Candidate Admitted Successfully",
                                 "success"
                             );
                             this.clear();

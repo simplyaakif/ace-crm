@@ -178,7 +178,7 @@
                         <div class="form-group mg-b-10-force">
                             <label class="form-control-label">Query Dealt By: </label>
                             <multiselect v-model="selectedQuery.q_dealt_by"
-                                         :options="['Miss Ismat','Miss Ayesha','Sir Abdullah','Sir Aakif']"
+                                         :options="['Miss Anum','Miss Ayesha','Sir Abdullah','Sir Aakif']"
                                          :searchable="true" :close-on-select="true"
                                          placeholder="Pick a value"></multiselect>
 
@@ -300,7 +300,7 @@
                     {value: 'Admission', label: 'Admission'},
                 ],
                 dealtBy: [
-                    {value: 'Miss Ismat', label: 'Miss Ismat'},
+                    {value: 'Miss Anum', label: 'Miss Anum'},
                     {value: 'Miss Ayesha', label: 'Miss Ayesha'},
                     {value: 'Sir Abdullah', label: 'Sir Abdullah'},
                     {value: 'Sir Aakif', label: 'Sir Aakif'},

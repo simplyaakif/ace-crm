@@ -38,8 +38,9 @@
             ])->count();
 
             $currentMonth    = date('m');
-            $monthAdmissions = DB::table('admissions')->whereRaw('MONTH(created_at) = ?', [$currentMonth])->count();
-
+//            $monthAdmissions = DB::table('admissions')->whereRaw('MONTH(created_at) = ?', [$currentMonth])->count();
+            $monthAdmissions = DB::table('admissions')->whereRaw('MONTH(created_at) = ?', [$currentMonth])
+                ->whereRaw('YEAR(created_at) = YEAR(CURRENT_DATE())')->count();
             $fromDate = Carbon::now()->subMonth()->startOfMonth()->toDateString();
             $tillDate = Carbon::now()->subMonth()->endOfMonth()->toDateString();
 

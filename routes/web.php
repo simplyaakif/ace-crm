@@ -13,9 +13,9 @@
 
     //    Route::get('/')
 
-    Route::get('/', function () {
-        return redirect()->route('home');
-    });
+//    Route::get('/', function () {
+//        return redirect()->route('home');
+//    });
 
 //    Route::get('/database', 'DatabaseController@index');
 //    Route::get('/batch-ielts', 'BatchesController@batchNotification');
@@ -115,9 +115,9 @@
     Route::prefix('marketing')->group(function () {
 
         // Route New Registration Mail
-        Route::get('mail', function () {
-            return view('Pages/Mail Setup/Queries Mails/bNewRegistration');
-        });
+//        Route::get('mail', function () {
+//            return view('Pages/Mail Setup/Queries Mails/bNewRegistration');
+//        });
     });
 
 
@@ -178,6 +178,13 @@
         //Delete Course
         Route::delete('api/courses/{courses}', 'CoursesController@destroy');
 
+
+
+        Route::get('/lesson/all', 'LessonPlanController@index')->name('lesson_planner_all');
+        Route::get('/lesson/create', 'LessonPlanController@create')->name('lesson_planner_create');
+        Route::post('/lesson/store','LessonPlanController@store')->name('lesson_planner_store');
+        Route::get('/lesson/show/{id}', 'LessonPlanController@show')->name('lesson_planner_show');
+
     });
 
     Route::post('/courses/student-courses', 'CoursesController@studentCourses');
@@ -220,7 +227,7 @@
         Route::get('members', 'FinanceController@recoveries')->name('hr_members');
     });
 // MediaManager
-    ctf0\MediaManager\MediaRoutes::routes();
+//    ctf0\MediaManager\MediaRoutes::routes();
 
 
     //Messaging
@@ -228,6 +235,10 @@
     Route::group([
                      'prefix'     => 'sms',
                      'middleware' => 'auth'
-                 ],function(){
-       Route::post('single','MessageController@single');
+                 ], function () {
+        Route::post('single', 'MessageController@single');
     });
+
+
+
+
