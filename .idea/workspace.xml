@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9369e36b-d4c9-457a-83fb-e0faf15d4994" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/1 Ace Portal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/1 Ace Portal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-    </list>
+    <list default="true" id="9369e36b-d4c9-457a-83fb-e0faf15d4994" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -512,7 +508,7 @@
       <workItem from="1648705167297" duration="1149000" />
       <workItem from="1648710293659" duration="153000" />
       <workItem from="1648710597089" duration="2096000" />
-      <workItem from="1654001254452" duration="1928000" />
+      <workItem from="1654001254452" duration="2315000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1563644088486</created>
@@ -591,7 +587,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654001660022</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Removed Empty Package">
+      <created>1654004880250</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1654004880250</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Removed Trailing Comma">
+      <created>1654005007590</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1654005007590</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,6 +655,8 @@
     <MESSAGE value="Query Follow Status (Fields Added)" />
     <MESSAGE value="Deleted Composer lock" />
     <MESSAGE value="Added Lesson Planner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Lesson Planner" />
+    <MESSAGE value="Removed Empty Package" />
+    <MESSAGE value="Removed Trailing Comma" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed Trailing Comma" />
   </component>
 </project>

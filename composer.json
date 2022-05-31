@@ -17,7 +17,7 @@
         "laravel-enso/forms": "^3.2",
         "laravel-enso/select": "^3.2",
         "laravel-enso/tables": "^2.2.11",
-        "laravel/framework": "6.0.1",
+        "laravel/framework": "6.20.27",
         "laravel/tinker": "^1.0",
         "lifetimesms/gateway": "^1.0",
         "mashape/unirest-php": "^3.0",
