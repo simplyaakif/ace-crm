@@ -49,6 +49,7 @@
       <data directive="@endslot" />
       <data directive="@endswitch" />
       <data directive="@endunless" />
+      <data directive="@endunlessrole" />
       <data directive="@endverbatim" />
       <data directive="@endwhile" />
       <data directive="@extends" injection="true" prefix="&lt;?php echo $__env-&gt;make(" suffix=", array_except(get_defined_vars(), array('__data', '__path')))-&gt;render(); ?&gt;" />
@@ -81,6 +82,7 @@
       <data directive="@stop" />
       <data directive="@switch" injection="true" prefix="&lt;?php switch(" suffix="): ?&gt;" />
       <data directive="@unless" injection="true" prefix="&lt;?php if ( ! (" suffix=")): ?&gt;" />
+      <data directive="@unlessrole" injection="true" prefix="&lt;?php if(auth()-&gt;check() &amp;&amp; !auth()-&gt;user()-&gt;hasRole(" suffix=")); ?&gt;" />
       <data directive="@unset" injection="true" prefix="&lt;?php unset(" suffix="); ?&gt;" />
       <data directive="@verbatim" />
       <data directive="@while" injection="true" prefix="&lt;?php while (" suffix="): ?&gt;" />

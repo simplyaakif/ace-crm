@@ -2,37 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9369e36b-d4c9-457a-83fb-e0faf15d4994" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_1_14_21__10_03_AM.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Pages/academics/lesson_planner.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Pages/academics/lesson_planner_all.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Pages/academics/lesson_planner_show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/1 Ace Portal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/1 Ace Portal.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdmissionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdmissionsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DatabaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DatabaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FinanceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FinanceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QueriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QueriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/components/v-createadmission.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-createadmission.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/components/v-createquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-createquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/components/v-table-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components/v-table-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/misc/v-table-data.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/misc/v-table-data.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/vdadmissions/v-createadmission.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/vdadmissions/v-createadmission.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/vdqueries/v-createquery.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/vdqueries/v-createquery.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Layout/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Layout/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Pages/admissions/student.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/admissions/student.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Pages/dashboard/dash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/dashboard/dash.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +13,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints>
@@ -83,10 +57,13 @@
       </selected-paths>
     </layout>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
@@ -238,19 +215,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Aakif Work\Websites\Managment\LMS Laravel\resources\views\Pages\academics" />
-      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\resources\js\components\misc" />
-      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Http\Controllers\Tables" />
-      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Forms\Templates" />
-      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Http\Controllers\Tables\TableController" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Aakif Work\Websites\Managment\LMS Laravel\resources\views\Pages\academics" />
       <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\resources\js\components\misc" />
       <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\resources\views\pages\finance" />
       <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\config\enso" />
       <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Http\Controllers\Tables" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Aakif Work\Websites\Managment\LMS Laravel\resources\views\Pages\academics" />
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\resources\js\components\misc" />
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Http\Controllers\Tables" />
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Forms\Templates" />
+      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Http\Controllers\Tables\TableController" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.QueriesChartTest.queries_visit_data">
@@ -539,7 +516,10 @@
       <workItem from="1635836177875" duration="199000" />
       <workItem from="1641038520590" duration="1742000" />
       <workItem from="1643104023922" duration="899000" />
-      <workItem from="1643106828593" duration="915000" />
+      <workItem from="1643106828593" duration="2513000" />
+      <workItem from="1648705167297" duration="1149000" />
+      <workItem from="1648710293659" duration="153000" />
+      <workItem from="1648710597089" duration="2096000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1563644088486</created>
@@ -604,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601011773754</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Deleted Composer lock">
+      <created>1643108185139</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1643108185139</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,7 +631,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -657,6 +643,7 @@
     <MESSAGE value="Query Charts Refactor to a Single Method" />
     <MESSAGE value="Git Repo Regeneration" />
     <MESSAGE value="Query Follow Status (Fields Added)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Query Follow Status (Fields Added)" />
+    <MESSAGE value="Deleted Composer lock" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted Composer lock" />
   </component>
 </project>
