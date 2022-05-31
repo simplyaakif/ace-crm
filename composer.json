@@ -22,7 +22,6 @@
         "lifetimesms/gateway": "^1.0",
         "mashape/unirest-php": "^3.0",
         "spatie/laravel-permission": "^3.2",
-        "": ""
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.6",
