@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9369e36b-d4c9-457a-83fb-e0faf15d4994" name="Default Changelist" comment="Lifetimesms removed 2nd Time">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-    </list>
+    <list default="true" id="9369e36b-d4c9-457a-83fb-e0faf15d4994" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,27 +189,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "last_opened_file_path": "E:/Aakif Work/Websites/Managment/LMS Laravel/bootstrap/cache",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Aakif Work\Websites\Managment\LMS Laravel\bootstrap\cache" />
+      <recent name="E:\Aakif Work\Websites\Managment\LMS Laravel\bootstrap" />
       <recent name="E:\Aakif Work\Websites\Managment\LMS Laravel\resources\views\Pages\academics" />
       <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\resources\js\components\misc" />
       <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\resources\views\pages\finance" />
-      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\config\enso" />
-      <recent name="F:\Aakif Work\Websites\Managment\1 Ace Portal\app\Http\Controllers\Tables" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Aakif Work\Websites\Managment\LMS Laravel\resources\views\Pages\academics" />
@@ -513,7 +511,7 @@
       <workItem from="1648710293659" duration="153000" />
       <workItem from="1648710597089" duration="2096000" />
       <workItem from="1654001254452" duration="3591000" />
-      <workItem from="1654006908125" duration="308000" />
+      <workItem from="1654006908125" duration="608000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1563644088486</created>
@@ -634,7 +632,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654005987980</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Bootstrap Cache Folder emptied">
+      <created>1654007296445</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1654007296445</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Bootstrap Cache Lifetime fixed">
+      <created>1654007510742</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1654007510742</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -694,6 +706,8 @@
     <MESSAGE value="Laravel Updated &amp; Tables" />
     <MESSAGE value="Lifetimesms removed" />
     <MESSAGE value="Lifetimesms removed 2nd Time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lifetimesms removed 2nd Time" />
+    <MESSAGE value="Bootstrap Cache Folder emptied" />
+    <MESSAGE value="Bootstrap Cache Lifetime fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bootstrap Cache Lifetime fixed" />
   </component>
 </project>

@@ -37,11 +37,11 @@
       20 => 'Illuminate\\Validation\\ValidationServiceProvider',
       21 => 'Illuminate\\View\\ViewServiceProvider',
       22 => 'Spatie\\Permission\\PermissionServiceProvider',
-      23 => 'ctf0\\MediaManager\\MediaManagerServiceProvider',
-      24 => 'App\\Providers\\AppServiceProvider',
-      25 => 'App\\Providers\\AuthServiceProvider',
-      26 => 'App\\Providers\\EventServiceProvider',
-      27 => 'App\\Providers\\RouteServiceProvider',
+      24 => 'ctf0\\MediaManager\\MediaManagerServiceProvider',
+      25 => 'App\\Providers\\AppServiceProvider',
+      26 => 'App\\Providers\\AuthServiceProvider',
+      27 => 'App\\Providers\\EventServiceProvider',
+      28 => 'App\\Providers\\RouteServiceProvider',
     ),
     'aliases' =>
     array (
@@ -708,7 +708,11 @@
       'time' => 2,
     ),
   ),
-
+  'lifetimesms' =>
+  array (
+    'api_token' => NULL,
+    'api_secret' => NULL,
+  ),
   'logging' =>
   array (
     'default' => 'stack',
