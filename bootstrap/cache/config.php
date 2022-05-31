@@ -1,5 +1,5 @@
 <?php return array (
-  'app' =>
+  'app' => 
   array (
     'name' => 'Laravel',
     'env' => 'local',
@@ -12,7 +12,7 @@
     'faker_locale' => 'en_US',
     'key' => 'base64:Wo4xM2sfM7pwmcKQ2vAvyhRuKf7hWclZjbYNENo1hWM=',
     'cipher' => 'AES-256-CBC',
-    'providers' =>
+    'providers' => 
     array (
       0 => 'Illuminate\\Auth\\AuthServiceProvider',
       1 => 'Illuminate\\Broadcasting\\BroadcastServiceProvider',
@@ -37,13 +37,13 @@
       20 => 'Illuminate\\Validation\\ValidationServiceProvider',
       21 => 'Illuminate\\View\\ViewServiceProvider',
       22 => 'Spatie\\Permission\\PermissionServiceProvider',
-      24 => 'ctf0\\MediaManager\\MediaManagerServiceProvider',
-      25 => 'App\\Providers\\AppServiceProvider',
-      26 => 'App\\Providers\\AuthServiceProvider',
-      27 => 'App\\Providers\\EventServiceProvider',
-      28 => 'App\\Providers\\RouteServiceProvider',
+      23 => 'ctf0\\MediaManager\\MediaManagerServiceProvider',
+      24 => 'App\\Providers\\AppServiceProvider',
+      25 => 'App\\Providers\\AuthServiceProvider',
+      26 => 'App\\Providers\\EventServiceProvider',
+      27 => 'App\\Providers\\RouteServiceProvider',
     ),
-    'aliases' =>
+    'aliases' => 
     array (
       'App' => 'Illuminate\\Support\\Facades\\App',
       'Arr' => 'Illuminate\\Support\\Arr',
@@ -82,38 +82,38 @@
       'View' => 'Illuminate\\Support\\Facades\\View',
     ),
   ),
-  'auth' =>
+  'auth' => 
   array (
-    'defaults' =>
+    'defaults' => 
     array (
       'guard' => 'web',
       'passwords' => 'users',
     ),
-    'guards' =>
+    'guards' => 
     array (
-      'web' =>
+      'web' => 
       array (
         'driver' => 'session',
         'provider' => 'users',
       ),
-      'api' =>
+      'api' => 
       array (
         'driver' => 'token',
         'provider' => 'users',
         'hash' => false,
       ),
     ),
-    'providers' =>
+    'providers' => 
     array (
-      'users' =>
+      'users' => 
       array (
         'driver' => 'eloquent',
         'model' => 'App\\User',
       ),
     ),
-    'passwords' =>
+    'passwords' => 
     array (
-      'users' =>
+      'users' => 
       array (
         'provider' => 'users',
         'table' => 'password_resets',
@@ -121,77 +121,81 @@
       ),
     ),
   ),
-  'broadcasting' =>
+  'broadcasting' => 
   array (
     'default' => 'log',
-    'connections' =>
+    'connections' => 
     array (
-      'pusher' =>
+      'pusher' => 
       array (
         'driver' => 'pusher',
         'key' => '',
         'secret' => '',
         'app_id' => '',
-        'options' =>
+        'options' => 
         array (
           'cluster' => 'mt1',
           'encrypted' => true,
         ),
       ),
-      'redis' =>
+      'redis' => 
       array (
         'driver' => 'redis',
         'connection' => 'default',
       ),
-      'log' =>
+      'log' => 
       array (
         'driver' => 'log',
       ),
-      'null' =>
+      'null' => 
       array (
         'driver' => 'null',
       ),
     ),
   ),
-  'cache' =>
+  'cache' => 
   array (
-    'default' => 'file',
-    'stores' =>
+    'default' => 'none',
+    'stores' => 
     array (
-      'apc' =>
+      'none' => 
+      array (
+        'driver' => 'null',
+      ),
+      'apc' => 
       array (
         'driver' => 'apc',
       ),
-      'array' =>
+      'array' => 
       array (
         'driver' => 'array',
       ),
-      'database' =>
+      'database' => 
       array (
         'driver' => 'database',
         'table' => 'cache',
         'connection' => NULL,
       ),
-      'file' =>
+      'file' => 
       array (
         'driver' => 'file',
         'path' => 'E:\\Aakif Work\\Websites\\Managment\\LMS Laravel\\storage\\framework/cache/data',
       ),
-      'memcached' =>
+      'memcached' => 
       array (
         'driver' => 'memcached',
         'persistent_id' => NULL,
-        'sasl' =>
+        'sasl' => 
         array (
           0 => NULL,
           1 => NULL,
         ),
-        'options' =>
+        'options' => 
         array (
         ),
-        'servers' =>
+        'servers' => 
         array (
-          0 =>
+          0 => 
           array (
             'host' => '127.0.0.1',
             'port' => 11211,
@@ -199,12 +203,12 @@
           ),
         ),
       ),
-      'redis' =>
+      'redis' => 
       array (
         'driver' => 'redis',
         'connection' => 'cache',
       ),
-      'dynamodb' =>
+      'dynamodb' => 
       array (
         'driver' => 'dynamodb',
         'key' => '',
@@ -215,19 +219,19 @@
     ),
     'prefix' => 'laravel_cache',
   ),
-  'database' =>
+  'database' => 
   array (
     'default' => 'mysql',
-    'connections' =>
+    'connections' => 
     array (
-      'sqlite' =>
+      'sqlite' => 
       array (
         'driver' => 'sqlite',
         'database' => 'ace_crm',
         'prefix' => '',
         'foreign_key_constraints' => true,
       ),
-      'mysql' =>
+      'mysql' => 
       array (
         'driver' => 'mysql',
         'host' => '127.0.0.1',
@@ -242,11 +246,11 @@
         'prefix_indexes' => true,
         'strict' => true,
         'engine' => NULL,
-        'options' =>
+        'options' => 
         array (
         ),
       ),
-      'pgsql' =>
+      'pgsql' => 
       array (
         'driver' => 'pgsql',
         'host' => '127.0.0.1',
@@ -260,7 +264,7 @@
         'schema' => 'public',
         'sslmode' => 'prefer',
       ),
-      'sqlsrv' =>
+      'sqlsrv' => 
       array (
         'driver' => 'sqlsrv',
         'host' => '127.0.0.1',
@@ -274,21 +278,21 @@
       ),
     ),
     'migrations' => 'migrations',
-    'redis' =>
+    'redis' => 
     array (
       'client' => 'predis',
-      'options' =>
+      'options' => 
       array (
         'cluster' => 'predis',
       ),
-      'default' =>
+      'default' => 
       array (
         'host' => '127.0.0.1',
         'password' => NULL,
         'port' => '6379',
         'database' => 0,
       ),
-      'cache' =>
+      'cache' => 
       array (
         'host' => '127.0.0.1',
         'password' => NULL,
@@ -297,28 +301,28 @@
       ),
     ),
   ),
-  'enso' =>
+  'enso' => 
   array (
-    'datatable' =>
+    'datatable' => 
     array (
       'validations' => 'local',
-      'labels' =>
+      'labels' => 
       array (
         'crtNo' => '#',
         'actions' => 'Actions',
       ),
-      'lengthMenu' =>
+      'lengthMenu' => 
       array (
         0 => 10,
         1 => 15,
         2 => 30,
         3 => 50,
       ),
-      'buttons' =>
+      'buttons' => 
       array (
-        'global' =>
+        'global' => 
         array (
-          'create' =>
+          'create' => 
           array (
             'icon' => 'plus',
             'class' => NULL,
@@ -327,7 +331,7 @@
             'action' => 'router',
             'label' => 'Create',
           ),
-          'excel' =>
+          'excel' => 
           array (
             'icon' => 'file-excel',
             'class' => NULL,
@@ -336,7 +340,7 @@
             'action' => 'export',
             'label' => 'Excel',
           ),
-          'action' =>
+          'action' => 
           array (
             'icon' => 'check',
             'class' => NULL,
@@ -350,9 +354,9 @@
             'confirmation' => true,
           ),
         ),
-        'row' =>
+        'row' => 
         array (
-          'show' =>
+          'show' => 
           array (
             'icon' => 'eye',
             'class' => 'is-row-button',
@@ -360,7 +364,7 @@
             'event' => 'show',
             'action' => 'router',
           ),
-          'edit' =>
+          'edit' => 
           array (
             'icon' => 'pencil-alt',
             'class' => 'is-row-button',
@@ -368,7 +372,7 @@
             'event' => 'edit',
             'action' => 'router',
           ),
-          'destroy' =>
+          'destroy' => 
           array (
             'icon' => 'trash-alt',
             'class' => 'is-row-button',
@@ -380,7 +384,7 @@
             'confirmation' => true,
             'postEvent' => 'destroyed',
           ),
-          'download' =>
+          'download' => 
           array (
             'icon' => 'cloud-download-alt',
             'class' => 'is-row-button',
@@ -390,14 +394,14 @@
           ),
         ),
       ),
-      'style' =>
+      'style' => 
       array (
-        'default' =>
+        'default' => 
         array (
           0 => 'hover',
           1 => 'center',
         ),
-        'mapping' =>
+        'mapping' => 
         array (
           'left' => 'has-text-left',
           'center' => 'has-text-centered',
@@ -409,7 +413,7 @@
         ),
         'highlight' => 'has-background-info',
       ),
-      'controls' =>
+      'controls' => 
       array (
         0 => 'length',
         1 => 'columns',
@@ -417,17 +421,17 @@
         3 => 'reload',
         4 => 'reset',
       ),
-      'export' =>
+      'export' => 
       array (
         'path' => 'exports',
         'timeout' => 3600,
-        'notifications' =>
+        'notifications' => 
         array (
           0 => 'database',
           1 => 'broadcast',
         ),
       ),
-      'queues' =>
+      'queues' => 
       array (
         'exports' => 'heavy',
         'notifications' => 'notifications',
@@ -440,12 +444,12 @@
       'dataRouteSuffix' => 'tableData',
       'comparisonOperator' => 'LIKE',
     ),
-    'forms' =>
+    'forms' => 
     array (
       'validations' => 'local',
-      'buttons' =>
+      'buttons' => 
       array (
-        'create' =>
+        'create' => 
         array (
           'icon' => 'plus',
           'class' => 'is-info',
@@ -453,7 +457,7 @@
           'action' => 'router',
           'label' => 'Create',
         ),
-        'show' =>
+        'show' => 
         array (
           'icon' => 'eye',
           'class' => 'is-success',
@@ -461,7 +465,7 @@
           'action' => 'router',
           'label' => 'Show',
         ),
-        'back' =>
+        'back' => 
         array (
           'icon' => 'arrow-left',
           'class' => 'is-primary',
@@ -469,7 +473,7 @@
           'action' => 'router',
           'label' => 'Back',
         ),
-        'store' =>
+        'store' => 
         array (
           'icon' => 'check',
           'class' => 'is-success',
@@ -477,7 +481,7 @@
           'action' => 'router',
           'label' => 'Save',
         ),
-        'update' =>
+        'update' => 
         array (
           'icon' => 'check',
           'class' => 'is-success',
@@ -485,7 +489,7 @@
           'action' => 'router',
           'label' => 'Update',
         ),
-        'destroy' =>
+        'destroy' => 
         array (
           'icon' => 'trash-alt',
           'class' => 'is-danger',
@@ -503,28 +507,28 @@
       'dividerTitlePlacement' => 'center',
       'labels' => 'true',
     ),
-    'tables' =>
+    'tables' => 
     array (
       'apiVersion' => '3.1',
       'validations' => 'local',
       'dtRowId' => 'dtRowId',
-      'labels' =>
+      'labels' => 
       array (
         'crtNo' => '#',
         'actions' => 'Actions',
       ),
-      'lengthMenu' =>
+      'lengthMenu' => 
       array (
         0 => 15,
         1 => 25,
         2 => 50,
         3 => 100,
       ),
-      'buttons' =>
+      'buttons' => 
       array (
-        'global' =>
+        'global' => 
         array (
-          'create' =>
+          'create' => 
           array (
             'icon' => 'plus',
             'class' => NULL,
@@ -533,7 +537,7 @@
             'action' => 'router',
             'label' => 'Create',
           ),
-          'excel' =>
+          'excel' => 
           array (
             'icon' => 'file-excel',
             'class' => NULL,
@@ -542,7 +546,7 @@
             'action' => 'export',
             'label' => 'Excel',
           ),
-          'action' =>
+          'action' => 
           array (
             'icon' => 'check',
             'class' => NULL,
@@ -556,9 +560,9 @@
             'confirmation' => true,
           ),
         ),
-        'row' =>
+        'row' => 
         array (
-          'show' =>
+          'show' => 
           array (
             'icon' => 'eye',
             'class' => 'is-row-button',
@@ -566,7 +570,7 @@
             'event' => 'show',
             'action' => 'router',
           ),
-          'edit' =>
+          'edit' => 
           array (
             'icon' => 'pencil-alt',
             'class' => 'is-row-button',
@@ -574,7 +578,7 @@
             'event' => 'edit',
             'action' => 'router',
           ),
-          'destroy' =>
+          'destroy' => 
           array (
             'icon' => 'trash-alt',
             'class' => 'is-row-button',
@@ -586,7 +590,7 @@
             'confirmation' => true,
             'postEvent' => 'destroyed',
           ),
-          'download' =>
+          'download' => 
           array (
             'icon' => 'cloud-download-alt',
             'class' => 'is-row-button',
@@ -596,16 +600,16 @@
           ),
         ),
       ),
-      'style' =>
+      'style' => 
       array (
-        'default' =>
+        'default' => 
         array (
           0 => 'hover',
           1 => 'center',
           2 => 'compact',
           3 => 'striped',
         ),
-        'mapping' =>
+        'mapping' => 
         array (
           'left' => 'has-text-left',
           'center' => 'has-text-centered',
@@ -617,7 +621,7 @@
         ),
         'highlight' => 'has-background-info',
       ),
-      'controls' =>
+      'controls' => 
       array (
         0 => 'length',
         1 => 'columns',
@@ -625,17 +629,17 @@
         3 => 'reload',
         4 => 'reset',
       ),
-      'export' =>
+      'export' => 
       array (
         'path' => 'exports',
         'timeout' => 3600,
-        'notifications' =>
+        'notifications' => 
         array (
           0 => 'broadcast',
           1 => 'database',
         ),
       ),
-      'queues' =>
+      'queues' => 
       array (
         'exports' => 'heavy',
         'notifications' => 'notifications',
@@ -647,7 +651,7 @@
       'method' => 'GET',
       'dataRouteSuffix' => 'tableData',
       'comparisonOperator' => 'LIKE',
-      'searchModes' =>
+      'searchModes' => 
       array (
         0 => 'full',
         1 => 'startsWith',
@@ -655,35 +659,35 @@
       ),
       'searchMode' => 'startsWith',
     ),
-    'select' =>
+    'select' => 
     array (
       'trackBy' => 'id',
-      'queryAttributes' =>
+      'queryAttributes' => 
       array (
         0 => 'name',
       ),
       'comparisonOperator' => 'LIKE',
     ),
   ),
-  'filesystems' =>
+  'filesystems' => 
   array (
     'default' => 'local',
     'cloud' => 's3',
-    'disks' =>
+    'disks' => 
     array (
-      'local' =>
+      'local' => 
       array (
         'driver' => 'local',
         'root' => 'E:\\Aakif Work\\Websites\\Managment\\LMS Laravel\\storage\\app',
       ),
-      'public' =>
+      'public' => 
       array (
         'driver' => 'local',
         'root' => 'E:\\Aakif Work\\Websites\\Managment\\LMS Laravel\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
-      's3' =>
+      's3' => 
       array (
         'driver' => 's3',
         'key' => '',
@@ -694,53 +698,53 @@
       ),
     ),
   ),
-  'hashing' =>
+  'hashing' => 
   array (
     'driver' => 'bcrypt',
-    'bcrypt' =>
+    'bcrypt' => 
     array (
       'rounds' => 10,
     ),
-    'argon' =>
+    'argon' => 
     array (
       'memory' => 1024,
       'threads' => 2,
       'time' => 2,
     ),
   ),
-  'lifetimesms' =>
+  'lifetimesms' => 
   array (
     'api_token' => NULL,
     'api_secret' => NULL,
   ),
-  'logging' =>
+  'logging' => 
   array (
     'default' => 'stack',
-    'channels' =>
+    'channels' => 
     array (
-      'stack' =>
+      'stack' => 
       array (
         'driver' => 'stack',
-        'channels' =>
+        'channels' => 
         array (
           0 => 'daily',
         ),
         'ignore_exceptions' => false,
       ),
-      'single' =>
+      'single' => 
       array (
         'driver' => 'single',
         'path' => 'E:\\Aakif Work\\Websites\\Managment\\LMS Laravel\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
-      'daily' =>
+      'daily' => 
       array (
         'driver' => 'daily',
         'path' => 'E:\\Aakif Work\\Websites\\Managment\\LMS Laravel\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
-      'slack' =>
+      'slack' => 
       array (
         'driver' => 'slack',
         'url' => NULL,
@@ -748,45 +752,45 @@
         'emoji' => ':boom:',
         'level' => 'critical',
       ),
-      'papertrail' =>
+      'papertrail' => 
       array (
         'driver' => 'monolog',
         'level' => 'debug',
         'handler' => 'Monolog\\Handler\\SyslogUdpHandler',
-        'handler_with' =>
+        'handler_with' => 
         array (
           'host' => NULL,
           'port' => NULL,
         ),
       ),
-      'stderr' =>
+      'stderr' => 
       array (
         'driver' => 'monolog',
         'handler' => 'Monolog\\Handler\\StreamHandler',
         'formatter' => NULL,
-        'with' =>
+        'with' => 
         array (
           'stream' => 'php://stderr',
         ),
       ),
-      'syslog' =>
+      'syslog' => 
       array (
         'driver' => 'syslog',
         'level' => 'debug',
       ),
-      'errorlog' =>
+      'errorlog' => 
       array (
         'driver' => 'errorlog',
         'level' => 'debug',
       ),
     ),
   ),
-  'mail' =>
+  'mail' => 
   array (
     'driver' => 'smtp',
     'host' => 'smtp.mailtrap.io',
     'port' => '2525',
-    'from' =>
+    'from' => 
     array (
       'address' => 'hello@example.com',
       'name' => 'Example',
@@ -795,35 +799,35 @@
     'username' => NULL,
     'password' => NULL,
     'sendmail' => '/usr/sbin/sendmail -bs',
-    'markdown' =>
+    'markdown' => 
     array (
       'theme' => 'default',
-      'paths' =>
+      'paths' => 
       array (
         0 => 'E:\\Aakif Work\\Websites\\Managment\\LMS Laravel\\resources\\views/vendor/mail',
       ),
     ),
     'log_channel' => NULL,
   ),
-  'mediaManager' =>
+  'mediaManager' => 
   array (
     'ignore_files' => '/^\\..*/',
     'storage_disk' => 'public',
     'controller' => '\\ctf0\\MediaManager\\Controllers\\MediaController',
     'allowed_fileNames_chars' => '\\._\\-\'\\s\\(\\),',
     'allowed_folderNames_chars' => '_-\\s',
-    'unallowed_mimes' =>
+    'unallowed_mimes' => 
     array (
       0 => 'php',
       1 => 'java',
     ),
-    'extended_mimes' =>
+    'extended_mimes' => 
     array (
-      'image' =>
+      'image' => 
       array (
         0 => 'binary/octet-stream',
       ),
-      'archive' =>
+      'archive' => 
       array (
         0 => 'application/x-tar',
         1 => 'application/zip',
@@ -840,23 +844,23 @@
     'table_locked' => 'locked',
     'pagination_amount' => 50,
   ),
-  'queue' =>
+  'queue' => 
   array (
     'default' => 'sync',
-    'connections' =>
+    'connections' => 
     array (
-      'sync' =>
+      'sync' => 
       array (
         'driver' => 'sync',
       ),
-      'database' =>
+      'database' => 
       array (
         'driver' => 'database',
         'table' => 'jobs',
         'queue' => 'heavy,default',
         'retry_after' => 90,
       ),
-      'beanstalkd' =>
+      'beanstalkd' => 
       array (
         'driver' => 'beanstalkd',
         'host' => 'localhost',
@@ -864,7 +868,7 @@
         'retry_after' => 90,
         'block_for' => 0,
       ),
-      'sqs' =>
+      'sqs' => 
       array (
         'driver' => 'sqs',
         'key' => '',
@@ -873,7 +877,7 @@
         'queue' => 'your-queue-name',
         'region' => 'us-east-1',
       ),
-      'redis' =>
+      'redis' => 
       array (
         'driver' => 'redis',
         'connection' => 'default',
@@ -882,47 +886,47 @@
         'block_for' => NULL,
       ),
     ),
-    'failed' =>
+    'failed' => 
     array (
       'database' => 'mysql',
       'table' => 'failed_jobs',
     ),
   ),
-  'services' =>
+  'services' => 
   array (
-    'mailgun' =>
+    'mailgun' => 
     array (
       'domain' => NULL,
       'secret' => NULL,
       'endpoint' => 'api.mailgun.net',
     ),
-    'postmark' =>
+    'postmark' => 
     array (
       'token' => NULL,
     ),
-    'ses' =>
+    'ses' => 
     array (
       'key' => '',
       'secret' => '',
       'region' => 'us-east-1',
     ),
-    'sparkpost' =>
+    'sparkpost' => 
     array (
       'secret' => NULL,
     ),
-    'stripe' =>
+    'stripe' => 
     array (
       'model' => 'App\\User',
       'key' => NULL,
       'secret' => NULL,
-      'webhook' =>
+      'webhook' => 
       array (
         'secret' => NULL,
         'tolerance' => 300,
       ),
     ),
   ),
-  'session' =>
+  'session' => 
   array (
     'driver' => 'file',
     'lifetime' => '120',
@@ -932,7 +936,7 @@
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
-    'lottery' =>
+    'lottery' => 
     array (
       0 => 2,
       1 => 100,
@@ -944,26 +948,26 @@
     'http_only' => true,
     'same_site' => NULL,
   ),
-  'view' =>
+  'view' => 
   array (
-    'paths' =>
+    'paths' => 
     array (
       0 => 'E:\\Aakif Work\\Websites\\Managment\\LMS Laravel\\resources\\views',
     ),
     'compiled' => 'E:\\Aakif Work\\Websites\\Managment\\LMS Laravel\\storage\\framework\\views',
   ),
-  'debug-server' =>
+  'debug-server' => 
   array (
     'host' => 'tcp://127.0.0.1:9912',
   ),
-  'permission' =>
+  'permission' => 
   array (
-    'models' =>
+    'models' => 
     array (
       'permission' => 'Spatie\\Permission\\Models\\Permission',
       'role' => 'Spatie\\Permission\\Models\\Role',
     ),
-    'table_names' =>
+    'table_names' => 
     array (
       'roles' => 'roles',
       'permissions' => 'permissions',
@@ -971,16 +975,16 @@
       'model_has_roles' => 'model_has_roles',
       'role_has_permissions' => 'role_has_permissions',
     ),
-    'column_names' =>
+    'column_names' => 
     array (
       'model_morph_key' => 'model_id',
     ),
     'display_permission_in_exception' => false,
     'display_role_in_exception' => false,
     'enable_wildcard_permission' => false,
-    'cache' =>
+    'cache' => 
     array (
-      'expiration_time' =>
+      'expiration_time' => 
       DateInterval::__set_state(array(
          'y' => 0,
          'm' => 0,
@@ -1004,22 +1008,22 @@
       'store' => 'default',
     ),
   ),
-  'trustedproxy' =>
+  'trustedproxy' => 
   array (
     'proxies' => NULL,
     'headers' => 30,
   ),
-  'tinker' =>
+  'tinker' => 
   array (
-    'commands' =>
+    'commands' => 
     array (
     ),
-    'dont_alias' =>
+    'dont_alias' => 
     array (
       0 => 'App\\Nova',
     ),
   ),
-  'ide-helper' =>
+  'ide-helper' => 
   array (
     'filename' => '_ide_helper.php',
     'meta_filename' => '.phpstorm.meta.php',
@@ -1030,47 +1034,47 @@
     'write_model_relation_count_properties' => true,
     'write_eloquent_model_mixins' => false,
     'include_helpers' => false,
-    'helper_files' =>
+    'helper_files' => 
     array (
       0 => 'E:\\Aakif Work\\Websites\\Managment\\LMS Laravel/vendor/laravel/framework/src/Illuminate/Support/helpers.php',
     ),
-    'model_locations' =>
+    'model_locations' => 
     array (
       0 => 'app',
     ),
-    'ignored_models' =>
+    'ignored_models' => 
     array (
     ),
-    'extra' =>
+    'extra' => 
     array (
-      'Eloquent' =>
+      'Eloquent' => 
       array (
         0 => 'Illuminate\\Database\\Eloquent\\Builder',
         1 => 'Illuminate\\Database\\Query\\Builder',
       ),
-      'Session' =>
+      'Session' => 
       array (
         0 => 'Illuminate\\Session\\Store',
       ),
     ),
-    'magic' =>
+    'magic' => 
     array (
     ),
-    'interfaces' =>
+    'interfaces' => 
     array (
     ),
-    'custom_db_types' =>
+    'custom_db_types' => 
     array (
     ),
     'model_camel_case_properties' => false,
-    'type_overrides' =>
+    'type_overrides' => 
     array (
       'integer' => 'int',
       'boolean' => 'bool',
     ),
     'include_class_docblocks' => false,
     'force_fqn' => false,
-    'additional_relation_types' =>
+    'additional_relation_types' => 
     array (
     ),
   ),
