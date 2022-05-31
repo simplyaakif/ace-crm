@@ -163,7 +163,6 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         Spatie\Permission\PermissionServiceProvider::class,
-//        Lifetimesms\Gateway\LifetimesmsServiceProvider::class,
         ctf0\MediaManager\MediaManagerServiceProvider::class,
 
         /*
@@ -229,7 +228,6 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-//        'Lifetimesms' =>  Lifetimesms\Gateway\Facades\LifetimesmsFacade::class,
 
     ],
 
