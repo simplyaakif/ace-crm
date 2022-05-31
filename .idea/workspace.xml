@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9369e36b-d4c9-457a-83fb-e0faf15d4994" name="Default Changelist" comment="" />
+    <list default="true" id="9369e36b-d4c9-457a-83fb-e0faf15d4994" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,6 +201,7 @@
     "WebServerToolWindowPanel.toolwindow.show.date": "false",
     "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
     "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -508,7 +511,7 @@
       <workItem from="1648705167297" duration="1149000" />
       <workItem from="1648710293659" duration="153000" />
       <workItem from="1648710597089" duration="2096000" />
-      <workItem from="1654001254452" duration="2315000" />
+      <workItem from="1654001254452" duration="2620000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1563644088486</created>
@@ -601,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654005007590</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Laravel Updated">
+      <created>1654005281837</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1654005281837</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,6 +667,7 @@
     <MESSAGE value="Added Lesson Planner" />
     <MESSAGE value="Removed Empty Package" />
     <MESSAGE value="Removed Trailing Comma" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Trailing Comma" />
+    <MESSAGE value="Laravel Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laravel Updated" />
   </component>
 </project>
