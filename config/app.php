@@ -163,7 +163,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         Spatie\Permission\PermissionServiceProvider::class,
-        Lifetimesms\Gateway\LifetimesmsServiceProvider::class,
+//        Lifetimesms\Gateway\LifetimesmsServiceProvider::class,
         ctf0\MediaManager\MediaManagerServiceProvider::class,
 
         /*
