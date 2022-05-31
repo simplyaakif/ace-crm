@@ -19,7 +19,6 @@
         "laravel-enso/tables": "^3.0.2",
         "laravel/framework": "6.20.40",
         "laravel/tinker": "^1.0",
-        "lifetimesms/gateway": "^1.0",
         "mashape/unirest-php": "^3.0",
         "spatie/laravel-permission": "^3.2"
     },
